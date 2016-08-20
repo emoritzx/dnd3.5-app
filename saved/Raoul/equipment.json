@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Breastplate",
+        "type": "Equipment",
+        "slot": "Armor",
+        "armor": {
+            "armor": 5,
+            "ACP": -4,
+            "Spell Failure": 25,
+            "Maximum Ability Bonus": 3,
+            "Speed": 20
+        },
+        "value": 200
+    },
+    {
+        "name": "Arbiter's Robe",
+        "type": "Equipment",
+        "slot": "Back",
+        "description": "This robe bears the mark of an Arbiter of Wee Jas, signifying that the wearer wields the power of judgement in matters of Law."
+    },
+    {
+        "name": "Common clothing",
+        "type": "Equipment",
+        "slot": "Clothing",
+        "flavor": {
+            "Feet": "Leather boots",
+            "Pants": "Cloth trousers",
+            "Shirt": "Cloth shirt"
+        }
+    }
+]

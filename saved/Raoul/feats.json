@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Combat Casting",
+        "type": "Feat",
+        "slot": "Character 1",
+        "description": "You get a +4 bonus on Concentration checks made to cast a spell or use a spell-like ability while on the defensive or while you are grappling or pinned."
+    },
+    {
+        "name": "Weapon Proficiency (Simple)",
+        "type": "Feat",
+        "slot": "Favored Soul 1",
+        "description": "Proficient with simple weapons"
+    },
+    {
+        "name": "Armor Proficiency (Light)",
+        "type": "Feat",
+        "slot": "Favored Soul 1",
+        "description": "Proficient with light armor"
+    },
+    {
+        "name": "Armor Proficiency (Medium)",
+        "type": "Feat",
+        "slot": "Favored Soul 1",
+        "description": "Proficient with medium armor"
+    },
+    {
+        "name": "Armor Proficiency (Shield)",
+        "type": "Feat",
+        "slot": "Favored Soul 1",
+        "description": "Proficient with shields (except tower shields)"
+    },
+    {
+        "name": "Weapon Focus (Dagger)",
+        "type": "Feat",
+        "slot": "Favored Soul 3",
+        "description": "+1 to attack rolls with deity's favored weapon"
+    },
+    {
+        "name": "Negotiator",
+        "type": "Feat",
+        "slot": "Character 3",
+        "skills": {
+            "Diplomacy": 2,
+            "Sense Motive": 2
+        }
+    }
+]

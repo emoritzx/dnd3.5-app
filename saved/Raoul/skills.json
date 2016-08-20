@@ -1,0 +1,183 @@
+{
+    "Appraise": {
+        "ability":      "Intelligence"
+    },
+    "Balance": {
+        "ability":      "Dexterity",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Bluff": {
+        "ability":      "Charisma"
+    },
+    "Climb": {
+        "ability":      "Strength",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Concentration": {
+        "ability":  "Constitution"
+    },
+    "Craft (...)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) ..."
+        }
+    },
+    "Decipher Script": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Diplomacy": {
+        "ability":      "Charisma"
+    },
+    "Disable Device": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Disguise": {
+        "ability":      "Charisma"
+    },
+    "Escape Artist": {
+        "ability":      "Dexterity",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Forgery": {
+        "ability":      "Intelligence"
+    },
+    "Gather Information": {
+        "ability":      "Charisma"
+    },
+    "Handle Animal": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Heal": {
+        "ability":      "Wisdom"
+    },
+    "Hide": {
+        "ability":      "Dexterity",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Intimidate": {
+        "ability":      "Charisma"
+    },
+    "Jump": {
+        "ability":      "Strength",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Knowledge (...)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) ..."
+        }
+    },
+    "Knowledge (Arcana)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Arcana"
+        }
+    },
+    "Listen": {
+        "ability":      "Wisdom"
+    },
+    "Move Silently": {
+        "ability":      "Dexterity",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Open Lock": {
+        "ability":      "Dexterity",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Perform (...)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) ..."
+        }
+    },
+    "Profession": {
+        "ability":      "Wisdom",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(Prof) ..."
+        }
+    },
+    "Profession (Arbiter)": {
+        "ability":      "Wisdom",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(Prof) Arbiter"
+        }
+    },
+    "Ride": {
+        "ability":      "Dexterity"
+    },
+    "Search": {
+        "ability":      "Intelligence"
+    },
+    "Sense Motive": {
+        "ability":      "Wisdom"
+    },
+    "Sleight of Hand": {
+        "ability":      "Dexterity",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Spellcraft": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Spot": {
+        "ability":      "Wisdom"
+    },
+    "Survival": {
+        "ability":      "Wisdom"
+    },
+    "Swim": {
+        "ability":      "Strength",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Tumble": {
+        "ability": "Dexterity",
+        "options": {
+            "trainedOnly": true,
+            "armorPenalty": true
+        }
+    },
+    "Use Magic Device": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Use Rope": {
+        "ability":      "Dexterity"
+    }
+}

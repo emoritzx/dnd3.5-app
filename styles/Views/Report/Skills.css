@@ -1,0 +1,73 @@
+.DnD\.Report\.SkillCollection {
+    text-align:       center;
+    display:          table;
+    border-collapse:  collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.DnD\.Report\.SkillCollection > :nth-child(2) {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.DnD\.Report\.SkillCollection > * {
+    display:    table-row;
+}
+
+.DnD\.Report\.SkillCollection\.Toolbar > * {
+    display: table-cell;
+    text-align: right;
+    /* no select */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.DnD\.Report\.SkillCollection\.Toolbar > * > * {
+    display: inline-block;
+}
+
+.DnD\.Report\.SkillCollection\.Header > * {
+    display:    table-cell;
+    padding:    0.25em;
+    border:     1px solid black;
+}
+
+.DnD\.Report\.Skill > * {
+    display:    table-cell;
+    padding:    0.25em;
+    border:     1px solid black;
+}
+
+.DnD\.Report\.Skill\.Value {
+    font-size:      1em;
+}
+
+.DnD\.Report\.Skill[dnd-trained=true] {
+    font-weight:    bold;
+}
+
+.DnD\.Report\.Skill[dnd-trained=false] {
+    color:    #666;
+}
+
+.DnD\.Report\.Skill[dnd-trained=false][dnd-trained-only=true] {
+    color:    #A00;
+}
+
+.DnD\.Report\.Skill[dnd-hidden=true] {
+    display: none;
+}
+
+.DnD\.Report\.Skill[dnd-maxed=true] {
+    color:  #00A;
+}
+
+.DnD\.Report\.Skill > [dnd-overmax=true] {
+    color:              #A00;
+}

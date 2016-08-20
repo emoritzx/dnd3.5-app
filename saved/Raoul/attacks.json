@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Melee (base)",
+        "type": "Melee",
+        "ability": "Strength"
+    },
+    {
+        "name": "Ranged (base)",
+        "type": "Ranged",
+        "ability": "Dexterity"
+    },
+    {
+        "name": "Jasidin Blade",
+        "type": "Melee",
+        "ability": "Strength",
+        "description": "The blade of justice",
+        "value": 8322,
+        "damage": [
+            {
+                "size": 4,
+                "type": "Normal",
+                "effect": [ "Piercing", "Slashing", "Silver" ]
+            },
+            {
+                "size": 1,
+                "type": "Constant",
+                "effect": [ "Piercing", "Slashing", "Silver" ]
+            }
+        ],
+        "bonus": 2,
+        "flavor": {
+            "Material": "Alchemical silver",
+            "Critical Range": "19-20",
+            "Critical Multiplier": 2,
+            "Binding": "(swift) (2/day) (duration 10min) When you activate a binding weapon, the next successful attack you make with it before the end of your turn prevents the target from using any form of extradimensional travel, as the dimensional anchor spell."
+        }
+    }
+]

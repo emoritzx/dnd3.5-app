@@ -1,0 +1,68 @@
+@import "Attributes.css";
+@import "Abilities.css";
+@import "Levels.css";
+@import "Skills.css";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.DnD\.Mobile {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.DnD\.Mobile\.Title {
+    height: 10vh;
+    line-height: 10vh;
+    width:   100vw;
+    background-color: #EEE;
+    overflow: hidden;
+}
+
+.DnD\.Mobile\.Title > * {
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+.DnD\.Mobile\.Title > span {
+    font-size: 5vh;
+}
+
+.DnD\.Mobile\.Menu {
+    position: absolute;
+    border-right: 1px solid black;
+    height: 90vh;
+    background-color: white;
+    overflow: auto;
+}
+
+.DnD\.Mobile\.Menu > * {
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 5vh;
+    border-bottom: 1px dotted gray;
+}
+
+.DnD\.Mobile\.Body {
+    height: 90vh;
+    overflow: auto;
+}
+
+.DnD\.Report\.Entry {
+    margin:     auto;
+    margin-top: 1em;
+}
+
+.DnD\.Report\.Entry > :first-child {
+    font-weight: bold;
+}
+
+.DnD\.Report\.Entry\.Description {
+    font-style: italic;
+}

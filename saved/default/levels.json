@@ -1,0 +1,399 @@
+[
+    {
+        "name":    "Smart Hero",
+        "type": "Level",
+        "slot": "Level 1",
+        "skills": {
+            "Acrobatics": 4,
+            "Computer Use": 4,
+            "Craft (Writing)": 4,
+            "Drive": 4,
+            "Investigate": 4,
+            "Knowledge (Civics)": 1,
+            "Knowledge (Current Events)": 1,
+            "Knowledge (Earth & Life Sciences)": 4,
+            "Knowledge (History)": 2,
+            "Knowledge (Physical Sciences)": 4,
+            "Knowledge (Tactics)": 2,
+            "Knowledge (Technology)": 4,
+            "Knowledge (Religion)": 2,
+            "Perform (Wind Instruments)": 2,
+            "Repair": 2,
+            "Research": 4
+        },
+        "armor": {
+            "class": 10
+        },
+        "saves": {
+            "Will": 1
+        }
+    },
+    {
+        "name":    "Smart Hero",
+        "type": "Level",
+        "slot": "Level 2",
+        "skills": {
+            "Athletics": 4,
+            "Computer Use": 1,
+            "Craft (Writing)": 1,
+            "Drive": 1,
+            "Investigate": 1,
+            "Knowledge (Earth & Life Sciences)": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Technology)": 1,
+            "Research": 1
+        },
+        "bab": 1,
+        "armor": {
+            "class": 1
+        },
+        "saves": {
+            "Will": 1
+        }
+    },
+    {
+        "name":    "Smart Hero",
+        "type": "Level",
+        "slot": "Level 3",
+        "skills": {
+            "Computer Use": 1,
+            "Concentration": 2,
+            "Craft (Writing)": 1,
+            "Diplomacy": 2,
+            "Drive": 1,
+            "Investigate": 1,
+            "Knowledge (Earth & Life Sciences)": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Technology)": 1,
+            "Research": 1
+        },
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1
+        }
+    },
+    {
+        "name":    "Smart Hero",
+        "type": "Level",
+        "slot": "Level 4",
+        "abilities": {
+            "Intelligence": 1
+        },
+        "skills": {
+            "Computer Use": 1,
+            "Craft (Writing)": 1,
+            "Drive": 1,
+            "Investigate": 1,
+            "Knowledge (Behavioral Sciences)": 2,
+            "Knowledge (Earth & Life Sciences)": 1,
+            "Knowledge (Geography)": 2,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Technology)": 1,
+            "Research": 1
+        },
+        "bab": 1
+    },
+    {
+        "name":    "Dedicated Hero",
+        "type": "Level",
+        "slot": "Level 5",
+        "skills": {
+            "Craft (Writing)": 1,
+            "Drive": 1,
+            "Investigate": 1,
+            "Knowledge (Earth & Life Sciences)": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Technology)": 1,
+            "Perception": 2
+        },
+        "armor": {
+            "class": 1
+        },
+        "saves": {
+            "Fortitude": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name":    "Dedicated Hero",
+        "type": "Level",
+        "slot": "Level 6",
+        "skills": {
+            "Investigate": 1,
+            "Knowledge (Earth & Life Sciences)": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Technology)": 1,
+            "Perception": 2,
+            "Survival": 2
+        },
+        "armor": {
+            "class": 1
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name":    "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 7",
+        "skills": {
+            "Drive": 3,
+            "Knowledge (Tactics)": 1,
+            "Pilot": 4,
+            "Survival": 1
+        },
+        "armor": {
+            "DR": 1
+        },
+        "saves": {
+            "Fortitude": 2,
+            "Reflex": 2,
+            "Will": 2
+        }
+    },
+    {
+        "name":    "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 8",
+        "abilities": {
+            "Intelligence": 1
+        },
+        "skills": {
+            "Drive": 2,
+            "Knowledge (Tactics)": 2,
+            "Perception": 3,
+            "Survival": 3
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 9",
+        "skills": {
+            "Acrobatics": 4,
+            "Athletics": 4,
+            "Survival": 2
+        },
+        "bab": 1,
+        "armor": {
+            "DR": 1
+        }
+    },
+    {
+        "name":    "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 10",
+        "skills": {
+            "Computer Use": 3,
+            "Drive": 3,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Tactics)": 1,
+            "Knowledge (Technology)": 1,
+            "Research": 1
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name":    "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 11",
+        "skills": {
+            "Computer Use": 3,
+            "Drive": 2,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Tactics)": 1,
+            "Knowledge (Technology)": 1,
+            "Perception": 1,
+            "Research": 1
+        },
+        "armor": {
+            "DR": 1
+        }
+    },
+    {
+        "name":    "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 12",
+        "abilities": {
+            "Dexterity": 1
+        },
+        "skills": {
+            "Computer Use": 2,
+            "Drive": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Tactics)": 1,
+            "Knowledge (Technology)": 1,
+            "Perception": 2,
+            "Research": 2
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name":    "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 13",
+        "skills": {
+            "Computer Use": 1,
+            "Drive": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Tactics)": 1,
+            "Knowledge (Technology)": 1,
+            "Perception": 3,
+            "Research": 2
+        },
+        "bab": 1,
+        "armor": {
+            "DR": 1
+        }
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 14",
+        "skills": {
+            "Computer Use": 1,
+            "Drive": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Tactics)": 1,
+            "Knowledge (Technology)": 1,
+            "Perception": 3,
+            "Research": 2
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 15",
+        "skills": {
+            "Computer Use": 1,
+            "Drive": 1,
+            "Knowledge (Earth & Life Sciences)": 1,
+            "Knowledge (Physical Sciences)": 1,
+            "Knowledge (Tactics)": 1,
+            "Knowledge (Technology)": 1,
+            "Perception": 2,
+            "Pilot": 2
+        },
+        "armor": {
+            "DR": 1
+        }
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 16",
+        "abilities": {
+            "Dexterity": 1
+        },
+        "skills": {
+            "Computer Use": 1,
+            "Drive": 1,
+            "Perception": 1,
+            "Pilot": 2,
+            "Use Rope": 5
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 17",
+        "skills": {
+            "Drive": 1,
+            "Computer Use": 1,
+            "Perception": 1,
+            "Pilot": 2,
+            "Use Rope": 5
+        },
+        "armor": {
+            "DR": 1
+        },
+        "bab": 1
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 18",
+        "skills": {
+            "Computer Use": 1,
+            "Drive": 1,
+            "Perception": 1,
+            "Pilot": 2,
+            "Use Rope": 5
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        }
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 19",
+        "skills": {
+            "Computer Use": 1,
+            "Drive": 1,
+            "Perception": 1,
+            "Pilot": 2,
+            "Use Rope": 5
+        },
+        "armor": {
+            "DR": 1
+        }
+    },
+    {
+        "name": "Anomalous Materials",
+        "type": "Level",
+        "slot": "Level 20",
+        "abilities": {
+            "Constitution": 5,
+            "Strength": 4,
+            "Dexterity": 4
+        },
+        "skills": {
+            "Computer Use": 1,
+            "Drive": 1,
+            "Perception": 1,
+            "Pilot": 7,
+            "Use Rope": 0
+        },
+        "bab": 1,
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        }
+    }
+] 

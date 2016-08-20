@@ -1,0 +1,23 @@
+@media screen
+{
+    .DnD\.Log {
+        top:    0;
+        left:   0;
+        width:  100vw;
+        margin: 0;
+        position:           fixed;
+        font-family:        monospace;
+        background-color:   #EEE;
+    }
+
+    .DnD\.Log:before {
+        content: "> ";
+    }
+}
+
+@media print
+{
+    .DnD\.Log {
+        display: none;
+    }
+}

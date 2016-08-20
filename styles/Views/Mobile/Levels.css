@@ -1,0 +1,20 @@
+.DnD\.Report\.LevelViewer {
+    display: table;
+    border-collapse: collapse;
+}
+
+.DnD\.Report\.LevelViewer > * {
+    display:    table-row;
+}
+
+.DnD\.Report\.LevelViewer > * > *{
+    display:    table-cell;
+    padding:    0.25em;
+    border: 1px solid black;
+}
+
+.DnD\.Report\.LevelViewer > :first-child {
+    background-color:   black;
+    color:              white;
+    font-weight:        bold;
+}

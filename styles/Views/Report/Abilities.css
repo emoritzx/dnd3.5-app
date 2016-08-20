@@ -1,0 +1,21 @@
+.DnD\.Report\.AbilityCollection {
+    text-align:       center;
+    display:          table;
+    border-collapse:  collapse;
+}
+
+.DnD\.Report\.AbilityCollection :first-child {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.DnD\.Report\.AbilityCollection > * {
+    display:    table-row;
+}
+
+.DnD\.Report\.AbilityCollection > * > * {
+    display:    table-cell;
+    padding:    0.25em;
+    border:     1px solid black;
+}

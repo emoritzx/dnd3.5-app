@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Melee (base)",
+        "type": "Melee",
+        "ability": "Strength"
+    },
+    {
+        "name": "Ranged (base)",
+        "type": "Ranged",
+        "ability": "Dexterity"
+    },
+    {
+        "name": "Bolt Pistol",
+        "type": "Ranged",
+        "ability": "Dexterity",
+        "flavor": {
+            "Critical Range":[ 19, 20 ],
+            "Critical Multiplier": 2,
+            "range": 50,
+            "magazine": 10,
+            "ammunition": "Kraken Rounds: These rounds are crafted from reactor-grade uranium and cause tiny nuclear explosions when they hit. Attacks using this ammunition ignore DR/Hardness and are touch attacks. Crafted by Chris Shipman.",
+            "proficiency": "Exotic",
+            "rate": "Single shot",
+            "special": "Using as an exotic one-handed weapon requires a Strength of 16, otherwise is an exotic two-handed weapon.",
+            "weight": 14
+        },
+        "damage": [
+            {
+                "size": 6,
+                "number": 4,
+                "type": "Brutal",
+                "effect": "Ballistic",
+                "args": [2]
+            }
+        ]
+    },
+    {
+        "name": "Power Sword",
+        "type": "Melee",
+        "ability": "Strength",
+        "damage": [
+            {
+                "size": 8,
+                "number": 2,
+                "type": "Normal",
+                "effect": "Slashing"
+            }
+        ],
+        "flavor": {
+            "Critical Range": [ 19, 20 ],
+            "Critical Multiplier": 2,
+            "weight": 12,
+            "proficiency": "Exotic",
+            "special 1": "Two-handed exotic weapon for a medium creature",
+            "special 2": "All attacks with this weapon are touch attacks."
+        }
+    },
+    {
+        "name": "Barnacle",
+        "type": "Ranged",
+        "ability": "Dexterity",
+        "description": "Om nom nom.",
+        "damage": [
+            {
+                "size": 6,
+                "number": 2,
+                "type": "Normal",
+                "effect": [ "Piercing", "Slashing", "Bludgeoning" ]
+            },
+            {
+                "size": 10,
+                "type": "Constant",
+                "effect": [ "Piercing", "Slashing", "Bludgeoning" ]
+            }
+        ],
+        "flavor": {
+            "Critical Range": [ 17, 20 ],
+            "Critical Multiplier": 2,
+            "weight": 15,
+            "magazine": 1,
+            "ammunition": "Tongue",
+            "range": "10, Max 30",
+            "rate": "Single shot",
+            "special 1": "Touch attack, attaches tongue. Pulls enemy closer as reverse bull rush with a bonus of +16. If the enemy is pulled adjacent, bites.",
+            "special 2": "Only requires two hands to fire, everything else happens of the barnacle's volition"
+        }
+    },
+    {
+        "name": "Crowbar",
+        "type": "Melee",
+        "ability": "Strength",
+        "description": "Solving problems, one headcrab at a time.",
+        "damage": [
+            {
+                "size": 8,
+                "type": "Normal",
+                "effect": [ "Piercing", "Bludgeoning" ]
+            }
+        ],
+        "flavor": {
+            "Critical Range": 20,
+            "Critical Multiplier": 2,
+            "special": "Synergy bonus: Badassery. Damage increases one die size. Only applies when wielded by the One Free Man"
+        }
+    },
+    {
+        "name": "Electric Touch",
+        "type": "Spell",
+        "damage": [
+            {
+                "size": 1,
+                "type": "Constant",
+                "effect": [ "Electric", "Non-Lethal" ]
+            }
+        ]
+    }
+]

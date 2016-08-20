@@ -1,0 +1,22 @@
+{
+    "Strength": {
+        "value": 12,
+        "bonus": 4
+    },
+    "Dexterity": {
+        "value": 12
+    },
+    "Constitution": {
+        "value": 14,
+        "bonus": 6
+    },
+    "Intelligence": {
+        "value": 16
+    },
+    "Wisdom": {
+        "value": 14
+    },
+    "Charisma": {
+        "value": 16
+    }
+}

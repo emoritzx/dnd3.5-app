@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Abilities",
+        "type": "Race",
+        "abilities": {
+            "Wisdom": 2,
+            "Charisma": 2
+        }
+    },
+    {
+        "name": "Bonus Skills",
+        "type": "Race",
+        "skills": {
+            "Spot": 2,
+            "Listen": 2
+        }
+    },
+    {
+        "name": "Darkvision",
+        "type": "Race",
+        "description": "Subject can see in the dark up to 60ft"
+    },
+    {
+        "name": "Common",
+        "type": "Language"
+    },
+    {
+        "name": "Celestial",
+        "type": "Language"
+    },
+    {
+        "name": "Elven",
+        "type": "Language"
+    },
+    {
+        "name": "Draconic",
+        "type": "Language"
+    }
+]

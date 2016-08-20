@@ -1,0 +1,18 @@
+{
+    "Favored Soul": {
+        "hitDie": 8,
+        "skillModifier": 2,
+        "skills": {
+            "Concentration": true,
+            "Craft (...)": true,
+            "Diplomacy": true,
+            "Heal": true,
+            "Jump": true,
+            "Knowledge (Arcana)": true,
+            "Profession": true,
+            "Profession (Arbiter)": true,
+            "Sense Motive": true,
+            "Spellcraft": true
+        }
+    }
+}

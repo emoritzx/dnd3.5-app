@@ -1,0 +1,24 @@
+{
+    "Wizard": {
+        "hitDie": 4,
+        "skillModifier": 2,
+        "skills": {
+            "Concentration": true,
+            "Craft (...)": true,
+            "Decipher Script": true,
+            "Knowledge (Arcana)": true,
+            "Knowledge (Architecture & Engineering)": true,
+            "Knowledge (Dungeoneering)": true,
+            "Knowledge (Geography)": true,
+            "Knowledge (History)": true,
+            "Knowledge (Local)": true,
+            "Knowledge (Nature)": true,
+            "Knowledge (Nobility)": true,
+            "Knowledge (Psionics)": true,
+            "Knowledge (Religion)": true,
+            "Knowledge (Planes)": true,
+            "Profession": true,
+            "Spellcraft": true
+        }
+    }
+}

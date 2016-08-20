@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Favored Soul",
+        "type": "Level",
+        "slot": "Level 1",
+        "skills": {
+            "Concentration": 4,
+            "Diplomacy": 4,
+            "Gather Information": 4,
+            "Profession (Arbiter)": 4,
+            "Sense Motive": 4
+        },
+        "armor": {
+            "class": 10
+        },
+        "saves": {
+            "Fortitude": 2,
+            "Reflex": 2,
+            "Will": 2
+        }
+    },
+    {
+        "name": "Favored Soul",
+        "type": "Level",
+        "slot": "Level 2",
+        "skills": {
+            "Concentration": 1,
+            "Diplomacy": 1,
+            "Gather Information": 1,
+            "Profession (Arbiter)": 1,
+            "Sense Motive": 1
+        },
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        },
+        "bab": 1
+    },
+    {
+        "name": "Favored Soul",
+        "type": "Level",
+        "slot": "Level 3",
+        "skills": {
+            "Concentration": 1,
+            "Diplomacy": 1,
+            "Gather Information": 1,
+            "Profession (Arbiter)": 1,
+            "Sense Motive": 1
+        },
+        "bab": 1
+    }
+] 

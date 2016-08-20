@@ -1,0 +1,61 @@
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.help:before {
+    content: "?";
+}
+
+.help:hover {
+    cursor: help;
+}
+
+.success {
+    color: #0A0;
+}
+
+.warn,
+.warning,
+.caution,
+.alert {
+    color:  #FFBF00;
+}
+
+.fail,
+.failure,
+.error {
+    color: #A00;
+}
+
+.clickable:hover,
+.clickable-all :hover {
+    cursor: pointer;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+}

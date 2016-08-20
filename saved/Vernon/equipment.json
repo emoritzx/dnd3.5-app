@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Ring of Protection +2",
+        "type": "Equipment",
+        "slot": "Ring 1",
+        "armor": {
+            "bonus": 2
+        },
+        "value": 8000
+    },
+    {
+        "name": "Ring of Wizardry I",
+        "type": "Equipment",
+        "slot": "Ring 2",
+        "description": "The wearer’s arcane spells per day are doubled for one specific spell level.",
+        "value": 20000
+    },
+    {
+        "name": "Headband of Intellect +4",
+        "type": "Equipment",
+        "slot": "Head",
+        "abilities": {
+            "Intelligence": 4
+        },
+        "value": 16000
+    },
+    {
+        "name": "Cloak of Resistance +4",
+        "type": "Equipment",
+        "slot": "Back",
+        "saves": {
+            "Fortitude": 4,
+            "Reflex": 4,
+            "Will": 4
+        },
+        "value": 16000
+    },
+    {
+        "name": "Vest of Constitution +4",
+        "type": "Equipment",
+        "slot": "Torso",
+        "abilities": {
+            "Constitution": 4
+        }
+    },
+    {
+        "name": "Rod of Extend Spell",
+        "type": "Equipment",
+        "slot": "Caster Item",
+        "description": "(3 / day) The wielder can cast up to three spells per day that are extended as though using the Extend Spell feat.",
+        "value": 11000
+    }
+]

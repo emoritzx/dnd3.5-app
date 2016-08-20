@@ -1,0 +1,24 @@
+.DnD\.Report\.AttributeCollection {
+
+}
+
+.DnD\.Report\.AttributeCollection > * {
+    margin: 0.25em 0.25em;
+}
+
+.DnD\.Report\.Attribute {
+    display:    inline-block;
+}
+
+.DnD\.Report\.Attribute :first-child {
+    font-weight:    bold;
+    margin-right:   0.5em;
+}
+
+.DnD\.Report\.Attribute :first-child:after {
+    content:    ":";
+}
+
+.DnD\.Report\.Attribute :last-child {
+    text-decoration:    underline;
+}

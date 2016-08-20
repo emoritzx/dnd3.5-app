@@ -1,0 +1,94 @@
+[
+    {
+        "name": "Software Engineer (Technician)",
+        "type": "Profession",
+        "skills": {
+            "Computer Use": 1,
+            "Knowledge (Technology)": 1,
+            "Research": 1
+        }
+    },
+    {
+        "name": "Savant",
+        "type": "Talent",
+        "slot": "Smart Hero 1",
+        "skills": {
+            "Computer Use": 4
+        }
+    },
+    {
+        "name": "Savant",
+        "type": "Talent",
+        "slot": "Smart Hero 3",
+        "skills": {
+            "Perception": 4
+        }
+    },
+    {
+        "name": "Empathy",
+        "type": "Talent",
+        "slot": "Dedicated Hero 1",
+        "skills": {
+            "Bluff": 2,
+            "Diplomacy": 2,
+            "Handle Animal": 2,
+            "Intimidate": 2,
+            "Perform (Art)": 2,
+            "Perform (Dance)": 2,
+            "Perform (Sing)": 2,
+            "Perform (Standup)": 2,
+            "Perform (Stringed Instruments)": 2,
+            "Perform (Wind Instruments)": 2,
+            "Perform (Percussion Instruments)": 2,
+            "Sense Motive": 2
+        }
+    },
+    {
+        "name": "Hazard Suit Proficiency",
+        "type": "Talent",
+        "slot": "Anomalous Materials 1",
+        "description": "Subject may use the Hazard Suit without penalty. Grants additional damage reduction of 2/- per class level. Counts as Light Armor Proficiency."
+    },
+    {
+        "name": "The Silent One",
+        "type": "Talent",
+        "slot": "Anomalous Materials 1",
+        "description": "Subject suffers a -10 penalty to skill checks when speaking"
+    },
+    {
+        "name": "Hazard Weapon Storage",
+        "type": "Talent",
+        "slot": "Anomalous Materials 2",
+        "description": "The Hazard Suit can store one (1) weapon for each Exotic Weapon Aptitude or Proficiency. This storage is only accessible by the wearer and counts as an extra-dimensional space."
+    },
+    {
+        "name": "Exotic Weapon Aptitude 1",
+        "type": "Talent",
+        "slot": "Anomalous Materials 2",
+        "description": "Subject gains proficiency with one (1) exotic weapon of choice. The weapon of choice may be changed by practicing with a new weapon for one (1) hour. This counts as Exotic Weapon Proficiency."
+    },
+    {
+        "name": "Exotic Weapon Aptitude 2",
+        "type": "Talent",
+        "slot": "Anomalous Materials 5",
+        "description": "Subject gains proficiency with one (1) exotic weapon of choice. The weapon of choice may be changed by practicing with a new weapon for one (1) hour. This counts as Exotic Weapon Proficiency."
+    },
+    {
+        "name": "Exotic Weapon Aptitude 3",
+        "type": "Talent",
+        "slot": "Anomalous Materials 8",
+        "description": "Subject gains proficiency with one (1) exotic weapon of choice. The weapon of choice may be changed by practicing with a new weapon for one (1) hour. This counts as Exotic Weapon Proficiency."
+    },
+    {
+        "name": "Exotic Weapon Aptitude 4",
+        "type": "Talent",
+        "slot": "Anomalous Materials 11",
+        "description": "Subject gains proficiency with one (1) exotic weapon of choice. The weapon of choice may be changed by practicing with a new weapon for one (1) hour. This counts as Exotic Weapon Proficiency."
+    },
+    {
+        "name": "Exotic Weapon Aptitude 5",
+        "type": "Talent",
+        "slot": "Anomalous Materials 14",
+        "description": "Subject gains proficiency with one (1) exotic weapon of choice. The weapon of choice may be changed by practicing with a new weapon for one (1) hour. This counts as Exotic Weapon Proficiency."
+    }
+]

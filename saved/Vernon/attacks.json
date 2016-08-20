@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Melee (base)",
+        "type": "Melee",
+        "ability": "Strength"
+    },
+    {
+        "name": "Ranged (base)",
+        "type": "Ranged",
+        "ability": "Dexterity"
+    },
+    {
+        "name": "Dagger",
+        "type": "Melee",
+        "ability": "Strength",
+        "value": 2,
+        "damage": [
+            {
+                "size": 4,
+                "type": "Normal",
+                "effect": [ "Piercing", "Slashing" ]
+            }
+        ],
+        "flavor": {
+            "Critical Range": "19-20",
+            "Critical Multiplier": 2
+        }
+    },
+    {
+        "name": "Crossbow, Light",
+        "type": "Ranged",
+        "ability": "Dexterity",
+        "damage": [
+            {
+                "size": 8,
+                "type": "Normal",
+                "effect": [ "Piercing" ]
+            }
+        ],
+        "flavor": {
+            "Critical Range": "19-20",
+            "Critical Multiplier": 2
+        }
+    }
+]

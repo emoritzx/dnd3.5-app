@@ -1,0 +1,379 @@
+{
+    "Acrobatics": {
+        "ability":      "Dexterity",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Appraise": {
+        "ability":      "Intelligence"
+    },
+    "Athletics": {
+        "ability":      "Strength",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Bluff": {
+        "ability":      "Charisma"
+    },
+    "Computer Use": {
+        "ability":      "Intelligence"
+    },
+    "Concentration": {
+        "ability":  "Constitution"
+    },
+    "Craft (Chemical)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) Chemical"
+        }
+    },
+    "Craft (Electronic)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) Electronics"
+        }
+    },
+    "Craft (Mechanical)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) Mechanical"
+        }
+    },
+    "Craft (Pharmaceutical)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) Pharmaceutical"
+        }
+    },
+    "Craft (Structural)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) Structural"
+        }
+    },
+    "Craft (Visual Art)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) Visual Art"
+        }
+    },
+    "Craft (Writing)": {
+        "ability": "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(C) Writing"
+        }
+    },
+    "Decipher Script": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Demolitions": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Diplomacy": {
+        "ability":      "Charisma"
+    },
+    "Disable Device": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Disguise": {
+        "ability":      "Charisma"
+    },
+    "Drive": {
+        "ability":      "Dexterity"
+    },
+    "Forgery": {
+        "ability":      "Intelligence"
+    },
+    "Gamble": {
+        "ability":      "Wisdom"
+    },
+    "Gather Information": {
+        "ability":      "Charisma"
+    },
+    "Handle Animal": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Intimidate": {
+        "ability":      "Charisma"
+    },
+    "Investigate": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Knowledge (Architecture & Engineering)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Arch & Eng"
+        }
+    },
+    "Knowledge (Arcana)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Arcana"
+        }
+    },
+    "Knowledge (Art)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Art"
+        }
+    },
+    "Knowledge (Bardic)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Bardic"
+        }
+    },
+    "Knowledge (Behavioral Sciences)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Behavior Sci"
+        }
+    },
+    "Knowledge (Business)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Business"
+        }
+    },
+    "Knowledge (Civics)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Civics"
+        }
+    },
+    "Knowledge (Current Events)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Cur Events"
+        }
+    },
+    "Knowledge (Earth & Life Sciences)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Earth & Life Sci"
+        }
+    },
+    "Knowledge (Geography)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Geography"
+        }
+    },
+    "Knowledge (History)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) History"
+        }
+    },
+    "Knowledge (Local)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Local"
+        }
+    },
+    "Knowledge (Nature)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Nature"
+        }
+    },
+    "Knowledge (Nobility)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Nobility"
+        }
+    },
+    "Knowledge (Physical Sciences)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Physical Sci"
+        }
+    },
+    "Knowledge (Planes)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Planes"
+        }
+    },
+    "Knowledge (Popular Culture)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Pop Culture"
+        }
+    },
+    "Knowledge (Psionics)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Psionics"
+        }
+    },
+    "Knowledge (Religion)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Religion"
+        }
+    },
+    "Knowledge (Tactics)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Tactics"
+        }
+    },
+    "Knowledge (Technology)": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(K) Technology"
+        }
+    },
+    "Perception": {
+        "ability":      "Wisdom"
+    },
+    "Perform (Art)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) Art"
+        }
+    },
+    "Perform (Dance)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) Dance"
+        }
+    },
+    "Perform (Sing)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) Sing"
+        }
+    },
+    "Perform (Standup)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) Standup"
+        }
+    },
+    "Perform (Stringed Instruments)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) String Inst"
+        }
+    },
+    "Perform (Wind Instruments)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) Wind Inst"
+        }
+    },
+    "Perform (Percussion Instruments)": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true,
+            "abbr": "(P) Percussion Inst"
+        }
+    },
+    "Pilot": {
+        "ability":      "Dexterity",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Repair": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Research": {
+        "ability":      "Intelligence"
+    },
+    "Ride": {
+        "ability":      "Dexterity"
+    },
+    "Sense Motive": {
+        "ability":      "Wisdom"
+    },
+    "Sleight of Hand": {
+        "ability":      "Dexterity",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Spellcraft": {
+        "ability":      "Intelligence",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Stealth": {
+        "ability":      "Dexterity",
+        "options": {
+            "armorPenalty": true
+        }
+    },
+    "Survival": {
+        "ability":      "Wisdom"
+    },
+    "Treat Injury": {
+        "ability":      "Wisdom"
+    },
+    "Use Magic Device": {
+        "ability":      "Charisma",
+        "options": {
+            "trainedOnly": true
+        }
+    },
+    "Use Rope": {
+        "ability":      "Dexterity"
+    }
+}

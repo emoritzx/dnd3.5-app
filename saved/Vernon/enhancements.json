@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Common",
+        "type": "Language"
+    },
+    {
+        "name": "Draconic",
+        "type": "Language"
+    },
+    {
+        "name": "Dwarven",
+        "type": "Language"
+    },
+    {
+        "name": "Elven",
+        "type": "Language"
+    },
+    {
+        "name": "Giant",
+        "type": "Language"
+    },
+    {
+        "name": "Orc",
+        "type": "Language"
+    },
+    {
+        "name": "Mage Armor",
+        "type": "Buff",
+        "armor": {
+            "armor": 4
+        }
+    },
+    {
+        "name": "Weapon Proficiency",
+        "type": "Class Ability",
+        "description": "Proficient with Club, Heavy Crossbow, Light Crossbow, Dagger, Quarterstaff."
+    },
+    {
+        "name": "Conjurer",
+        "type": "Class Ability",
+        "description": "You are specialized in the school of Conjuration. You can prepare one additional Conjuration spell per spell level each per day. You gain a +2 bonus to Spellcraft checks to learn spells from this school.",
+        "flavor": {
+            "Prohibited School 1": "Enchantment",
+            "Prohibited School 2": "Necromancy"
+        }
+    },
+    {
+        "name": "Immediate Magic (Ex)",
+        "type": "Class Ability",
+        "description": "(1/2 * level times per day) (immediate) Abrupt Jaunt: You and only you, teleport up to 10 feet."
+    },
+    {
+        "name": "Bonus Skills",
+        "type": "Racial Ability",
+        "description": "4 extra skill points at 1st level and 1 extra skill point at each additional level, since humans are versatile and capable."
+    }
+]

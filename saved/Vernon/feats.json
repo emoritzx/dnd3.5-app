@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Vatic Gaze",
+        "type": "Feat",
+        "slot": "Human 1",
+        "description": "You can detect magic at will and use Sense Motive to determine opponent's highest level spell."
+    },
+    {
+        "name": "Scribe Scroll",
+        "type": "Feat",
+        "slot": "Wizard 1",
+        "description": "Create magic scrolls."
+    },
+    {
+        "name": "Eschew Materials",
+        "type": "Feat",
+        "slot": "Character 1", 
+        "description": "Cast spells without material components."
+    },
+    {
+        "name": "Spell Penetration",
+        "type": "Feat",
+        "slot": "Character 3", 
+        "description": "+2 bonus on caster level checks to defeat spell resistance."
+    },
+    {
+        "name": "Brew Potion",
+        "type": "Feat",
+        "slot": "Wizard 5",
+        "description": "Create magic potions."
+    },
+    {
+        "name": "Greater Spell Penetration",
+        "type": "Feat",
+        "slot": "Character 6",
+        "description": "+4 bonus on caster level checks to defeat spell resistance."
+    },
+    {
+        "name": "Quicken Spell",
+        "type": "Feat",
+        "slot": "Character 9",
+        "description": "(Metamagic) Cast spells as free action."
+    },
+    {
+        "name": "Enlarge Spell",
+        "type": "Feat",
+        "slot": "Wizard 10",
+        "description": "(Metamagic) Double spell's range."
+    },
+    {
+        "name": "Still Spell",
+        "type": "Feat",
+        "slot": "Character 12",
+        "description": "(Metamagic) Cast spells without somatic components."
+    },
+    {
+        "name": "Silent Spell",
+        "type": "Feat",
+        "slot": "Wizard 15",
+        "description": "(Metamagic) You can cast spells silently."
+    },
+    {
+        "name": "Spell Mastery 1",
+        "type": "Feat",
+        "slot": "Character 15",
+        "description": "Each time you take this feat, choose a number of spells equal to your Intelligence modifier that you already know. From that point on, you can prepare these spells without referring to a spellbook."
+    }
+]

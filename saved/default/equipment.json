@@ -1,0 +1,85 @@
+[
+    {
+        "name": "Hazard Suit",
+        "type": "Equipment",
+        "slot": "Armor",
+        "armor": {
+            "armor": 10,
+            "ACP": -3,
+            "DR": 2,
+            "Spell Failure": 20,
+            "Maximum Ability Bonus": 6
+        },
+        "abilities": {
+            "Strength": 6
+        },
+        "saves": {
+            "Poison": 10
+        },
+        "speed": 0,
+        "weight": 45
+    },
+    {
+        "name": "Jump Kit",
+        "type": "Equipment",
+        "slot": "Feet",
+        "description": "Can produce a roll of 20 on a Jump check on demand."
+    },
+    {
+        "name": "Gloves of Dexterity +6",
+        "type": "Equipment",
+        "slot": "Hands",
+        "abilities": {
+            "Dexterity": 6
+        },
+        "value": 33000
+    },
+    {
+         "name": "Spider Goggles",
+         "type": "Equipment",
+         "slot": "Face",
+         "description": "Non-magical goggles made from spider robot parts. Wearing grants Darkvision and See Invisibility. Crafted by Chris Shipman."
+     },
+     {
+         "name": "Amulet of Health +6",
+         "type": "Equipment",
+         "slot": "Neck",
+         "abilities": {
+             "Constitution": 6
+         },
+         "value": 36000
+     },
+     {
+         "name": "Cloak of Resistance +2",
+         "type": "Equipment",
+         "slot": "Back",
+         "saves": {
+             "Will": 2,
+             "Fortitude": 2,
+             "Reflex": 2
+        }
+    },
+    {
+        "name": "Ring of Protection +2",
+        "type": "Equipment",
+        "slot": "Ring 2",
+        "armor": {
+             "armor": 2
+        }
+    },
+    {
+        "name": "Ring of Feather Falling",
+        "type": "Equipment",
+        "slot": "Ring 1",
+        "description": "This ring is crafted with a feather pattern all around its edge. It acts exactly like a feather fall spell, activated immediately if the wearer falls more than 5 feet.",
+        "value": 2200
+    },
+    {
+        "name": "Belt of Strength +6",
+        "type": "Equipment",
+        "slot": "Waist",
+        "abilities": {
+            "Strength": 6
+        }
+    }
+]

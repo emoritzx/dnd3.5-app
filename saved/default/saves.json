@@ -1,0 +1,12 @@
+{
+    "Fortitude": {
+        "ability": "Constitution"
+    },
+    "Reflex": {
+        "ability": "Dexterity"
+    },
+    "Will": {
+        "ability": "Wisdom"
+    },
+    "Poison": { }
+}

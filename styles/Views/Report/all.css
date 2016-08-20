@@ -1,0 +1,27 @@
+@import "Heading.css";
+@import "Attributes.css";
+@import "Abilities.css";
+@import "Levels.css";
+@import "Skills.css";
+
+.DnD\.Report {
+    text-align: center;
+}
+
+.DnD\.Report > * {
+    margin:     auto;
+    margin-top: 1em;
+}
+
+.DnD\.Report\.Entry {
+    margin:     auto;
+    margin-top: 1em;
+}
+
+.DnD\.Report\.Entry > :first-child {
+    font-weight: bold;
+}
+
+.DnD\.Report\.Entry\.Description {
+    font-style: italic;
+}

@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Vehicle Expert",
+        "type": "Feat",
+        "slot": "Character 1",
+        "skills": {
+            "Drive": 2,
+            "Pilot": 2
+        }
+    },
+    {
+        "name": "Quick Draw",
+        "type": "Feat",
+        "slot": "Character 1",
+        "description": "The character can draw a weapon as a free action."
+    },
+    {
+        "name": "Simple Weapons Proficiency",
+        "type": "Feat",
+        "slot": "Smart Hero 1",
+        "description": "Subject can use simple weapons normally."
+    },
+    {
+        "name": "Educated 1",
+        "type": "Feat",
+        "slot": "Smart Hero 2",
+        "skills": {
+            "Knowledge (Civics)": 2,
+            "Knowledge (Physical Sciences)": 2
+        }
+    },
+    {
+        "name": "Medium Armor Proficiency",
+        "type": "Feat",
+        "slot": "Character 3",
+        "description": "Subject can wear medium armor without penalty."
+    },
+    {
+        "name": "Educated 2",
+        "type": "Feat",
+        "slot": "Smart Hero 4",
+        "skills": {
+            "Knowledge (Current Events)": 2,
+            "Knowledge (Technology)": 2
+        }
+    },
+    {
+        "name": "Rapid Reload",
+        "type": "Feat",
+        "slot": "Character 6",
+        "description": "Weapon may be reloaded as a free or move action"
+    },
+    {
+        "name": "Far Shot",
+        "type": "Feat",
+        "slot": "Dedicated Hero 2",
+        "description": "When the character uses a firearm or archaic ranged weapon, its range increment increases by one-half (multiply by 1.5). When the character throws a weapon, its range increment is doubled."
+    },
+    {
+        "name": "Point Blank Shot",
+        "type": "Feat",
+        "slot": "Character 9",
+        "description": "+1 attack +1 damage on ranged attacks within 30 feet"
+    },
+    {
+        "name": "Precise Shot",
+        "type": "Feat",
+        "slot": "Character 12",
+        "description": "No penalty for shooting into melee"
+    },
+    {
+        "name": "Drive-by Attack",
+        "type": "Feat",
+        "slot": "Character Level 18",
+        "description": " The character takes no vehicle speed penalty when making an attack while in a moving vehicle. Also, if the character is the driver, he or she can take his or her attack action to make an attack at any point along the vehicle's movement."
+    },
+    {
+        "name": "Double Tap",
+        "type": "Feat",
+        "slot": "Character 15",
+        "description": "When using a semiautomatic firearm with at least two bullets loaded, the character may fire two bullets as a single attack against a single target. The character receives a –2 penalty on this attack, but deals +1 die of damage with a successful hit. Using this feat fires two bullets and can only be done if the weapon has two bullets in it."
+    }
+]

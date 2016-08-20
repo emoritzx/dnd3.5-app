@@ -1,0 +1,289 @@
+[
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 1",
+        "armor": {
+            "class": 10
+        },
+        "saves": {
+            "Will": 2
+        },
+        "skills": {
+            "Balance": 4,
+            "Concentration": 4,
+            "Decipher Script": 4,
+            "Knowledge (Arcana)": 4,
+            "Spellcraft": 4,
+            "Tumble": 4,
+            "Use Magic Device": 4
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 2",
+        "saves": {
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (Architecture & Engineering)": 1,
+            "Knowledge (Dungeoneering)": 1,
+            "Knowledge (Geography)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 3",
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1
+        },
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (History)": 1,
+            "Knowledge (Local)": 1,
+            "Knowledge (Nature)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 4",
+        "abilities": {
+            "Intelligence": 1
+        },
+        "saves": {
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (Nobility)": 1,
+            "Knowledge (Religion)": 1,
+            "Knowledge (Planes)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 5",
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Sense Motive": 3,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 6",
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Balance": 2,
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Sense Motive": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 7",
+        "skills": {
+            "Appraise": 1,
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Spellcraft": 1,
+            "Use Magic Device": 2
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 8",
+        "abilities": {
+            "Intelligence": 1
+        },
+        "saves": {
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Appraise": 1,
+            "Bluff": 2,
+            "Climb": 1,
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 9",
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1
+        },
+        "skills": {
+            "Climb": 1,
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Sense Motive": 1,
+            "Spellcraft": 1,
+            "Tumble": 2
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 10",
+        "saves": {
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (Nobility)": 1,
+            "Sense Motive": 3,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 11",
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (Geography)": 1,
+            "Knowledge (History)": 1,
+            "Knowledge (Nature)": 1,
+            "Knowledge (Religion)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 12",
+        "abilities": {
+            "Intelligence": 1
+        },
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1,
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (Architecture & Engineering)": 1,
+            "Knowledge (Dungeoneering)": 1,
+            "Knowledge (Local)": 1,
+            "Knowledge (Planes)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 13",
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Forgery": 2,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (History)": 1,
+            "Knowledge (Nobility)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 14",
+        "saves": {
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Balance": 2,
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Speak Language": 2,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 15",
+        "saves": {
+            "Fortitude": 1,
+            "Reflex": 1
+        },
+        "skills": {
+            "Appraise": 2,
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Forgery": 2,
+            "Knowledge (Arcana)": 1,
+            "Spellcraft": 1
+        }
+    },
+    {
+        "name": "Wizard",
+        "type": "Level",
+        "slot": "Level 16",
+        "abilities": {
+            "Intelligence": 1
+        },
+        "saves": {
+            "Will": 1
+        },
+        "bab": 1,
+        "skills": {
+            "Concentration": 1,
+            "Decipher Script": 1,
+            "Knowledge (Arcana)": 1,
+            "Knowledge (Religion)": 1,
+            "Knowledge (Planes)": 1,
+            "Knowledge (Nature)": 1,
+            "Knowledge (Local)": 1,
+            "Knowledge (Dungeoneering)": 1,
+            "Spellcraft": 1
+        }
+    }
+] 
