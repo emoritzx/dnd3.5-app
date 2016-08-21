@@ -23,7 +23,7 @@ JAVA_TARGETS	:= $(addprefix $(JAVA_DEST)/$(MESSAGE_NAMESPACE)/, \
 
 # rules
 
-all: java-protobuf
+all: java-project
 
 .PHONY: all clean vars variables \
 		java-protobuf java-protobuf-clean java-protobuf-clean-all \
