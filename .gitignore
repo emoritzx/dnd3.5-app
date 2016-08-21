@@ -1,2 +1,6 @@
+*.swp
 /dndapp.protobuf/nbproject/private/
 /proto/nbproject/private/
+/web/nbproject/private/
+/proto/dist/
+/proto/build/
