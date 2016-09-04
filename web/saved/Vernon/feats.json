@@ -24,10 +24,10 @@
         "description": "+2 bonus on caster level checks to defeat spell resistance."
     },
     {
-        "name": "Brew Potion",
+        "name": "Spell Focus (Conjuration)",
         "type": "Feat",
         "slot": "Wizard 5",
-        "description": "Create magic potions."
+        "description": "+1 bonus on save DCs against specified school of magic."
     },
     {
         "name": "Greater Spell Penetration",
@@ -42,16 +42,16 @@
         "description": "(Metamagic) Cast spells as free action."
     },
     {
-        "name": "Enlarge Spell",
+        "name": "Greater Spell Focus (Conjuration)",
         "type": "Feat",
         "slot": "Wizard 10",
-        "description": "(Metamagic) Double spell's range."
+        "description": "+2 bonus on save DCs against specified school of magic."
     },
     {
-        "name": "Still Spell",
+        "name": "Augment Summoning",
         "type": "Feat",
         "slot": "Character 12",
-        "description": "(Metamagic) Cast spells without somatic components."
+        "description": "Summoned creatures gain +4 STR, +4 CON"
     },
     {
         "name": "Silent Spell",
@@ -60,9 +60,9 @@
         "description": "(Metamagic) You can cast spells silently."
     },
     {
-        "name": "Spell Mastery 1",
+        "name": "Imbued Summoning",
         "type": "Feat",
         "slot": "Character 15",
-        "description": "Each time you take this feat, choose a number of spells equal to your Intelligence modifier that you already know. From that point on, you can prepare these spells without referring to a spellbook."
+        "description": "Imbue summoned creatures with spell effects of 3rd level or lower."
     }
 ]

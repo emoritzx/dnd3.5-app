@@ -1,28 +1,28 @@
 [
     {
-        "name": "Ring of Protection +2",
+        "name": "Ring of Protection +3",
         "type": "Equipment",
         "slot": "Ring 1",
         "armor": {
-            "bonus": 2
+            "bonus": 3
         },
-        "value": 8000
+        "value": 18000
     },
     {
-        "name": "Ring of Wizardry I",
+        "name": "Ring of Evasion",
         "type": "Equipment",
         "slot": "Ring 2",
-        "description": "The wearer’s arcane spells per day are doubled for one specific spell level.",
-        "value": 20000
+        "description": "This ring continually grants the wearer the ability to avoid damage as if she had evasion. Whenever she makes a Reflex saving throw to determine whether she takes half damage, a successful save results in no damage.",
+        "value": 25000
     },
     {
-        "name": "Headband of Intellect +4",
+        "name": "Headband of Intellect +6",
         "type": "Equipment",
         "slot": "Head",
         "abilities": {
-            "Intelligence": 4
+            "Intelligence": 6
         },
-        "value": 16000
+        "value": 36000
     },
     {
         "name": "Cloak of Resistance +4",
