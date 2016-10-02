@@ -94,7 +94,7 @@ define(
         
         Ability.getMod = function(value) {
             return Math.floor((value - 10) / 2);
-        }
+        };
         
         function calcAbbr(name) {
             if (name.length <= 3) {

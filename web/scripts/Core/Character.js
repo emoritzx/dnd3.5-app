@@ -234,7 +234,7 @@ define(
                 if (enhance.type === "Level") {
                     var classDef = this.classes.get(enhance.name);
                     if (classDef === null) {
-                        throw new Error("Class does not exist: " + className);
+                        throw new Error("Class does not exist: " + enhance.name);
                     }
                     this.enhance(new Level(classDef, enhance));
                 } else {
