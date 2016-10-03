@@ -4,11 +4,9 @@
 package dndlib.dice;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -19,9 +17,8 @@ public class BrutalEffect implements DiceEffect, Predicate<Integer> {
 
     private final Set<Integer> brutal;
 
-    public BrutalEffect(Collection<Integer> rolls) {
-        this.brutal = rolls.stream()
-            .collect(Collectors.toSet());
+    public BrutalEffect(Set<Integer> rolls) {
+        this.brutal = rolls;
     }
     
     @Override

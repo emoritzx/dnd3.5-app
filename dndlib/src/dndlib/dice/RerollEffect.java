@@ -3,10 +3,8 @@
  */
 package dndlib.dice;
 
-import java.util.Collection;
 import java.util.Set;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -17,10 +15,8 @@ public class RerollEffect implements DiceEffect, Predicate<Integer> {
 
     private final Set<Integer> reroll;
 
-    public RerollEffect(Collection<Integer> rolls) {
-        reroll = rolls
-            .stream()
-            .collect(Collectors.toSet());
+    public RerollEffect(Set<Integer> rolls) {
+        reroll = rolls;
     }
     
     @Override
