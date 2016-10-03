@@ -1,6 +1,6 @@
 package dndlib.character;
 
-import dndlib.core.IntegerAttribute;
+import dndlib.core.SimpleNumberEntity;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
@@ -8,7 +8,7 @@ import javafx.beans.property.SimpleIntegerProperty;
  *
  * @author emori
  */
-public class Ability extends IntegerAttribute {
+public class Ability extends SimpleNumberEntity {
 
     public static String abbreviate(String string) {
         return (string.length() <= 3)

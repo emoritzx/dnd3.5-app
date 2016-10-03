@@ -3,33 +3,31 @@
  */
 package dndlib.core;
 
-import dndlib.character.ArmorClass;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  *
  * @author emori
  */
-public final class CompositeAttributeBuilder {
+public final class CompositeNumberBuilder {
     
     private final String name;
     private final List<BonusType> bonusTypes = new ArrayList<>();
 
-    private CompositeAttributeBuilder(String name) {
+    private CompositeNumberBuilder(String name) {
         this.name = name;
     }
     
-    public CompositeAttributeBuilder add(BonusType bonusType) {
+    public CompositeNumberBuilder add(BonusType bonusType) {
         bonusTypes.add(bonusType);
         return this;
     }
     
-    public CompositeAttribute build() {
-        return new CompositeAttribute(name) {
+    public CompositeNumberEntity build() {
+        return new CompositeNumberEntity(name) {
             @Override
             public Collection<BonusType> getBonusTypes() {
                 return new ArrayList<>(bonusTypes);
@@ -37,16 +35,16 @@ public final class CompositeAttributeBuilder {
         };
     }
     
-    public static CompositeAttributeBuilder create(String name) {
-        return new CompositeAttributeBuilder(name);
+    public static CompositeNumberBuilder create(String name) {
+        return new CompositeNumberBuilder(name);
     }
     
-    public static CompositeAttribute defaults() {
+    public static CompositeNumberEntity defaults() {
         return defaults("Bonuses");
     }
     
-    public static CompositeAttribute defaults(String name) {
-        CompositeAttributeBuilder builder = new CompositeAttributeBuilder(name);
+    public static CompositeNumberEntity defaults(String name) {
+        CompositeNumberBuilder builder = new CompositeNumberBuilder(name);
         Arrays
             .stream(BonusType.Defaults.values())
             .map(BonusType.Defaults::getBonusType)

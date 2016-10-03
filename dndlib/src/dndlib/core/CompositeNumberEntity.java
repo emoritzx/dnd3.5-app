@@ -19,22 +19,22 @@ import javafx.beans.value.ObservableNumberValue;
  *
  * @author emori
  */
-public abstract class CompositeAttribute extends ValueAttribute {
+public abstract class CompositeNumberEntity extends AbstractNumberEntity {
     
     private final Map<BonusType, List<ObservableNumberValue>> map = new HashMap<>();
     private final IntegerProperty value = new SimpleIntegerProperty();
 
-    public CompositeAttribute(String name, Function<String, String> abbreviator) {
+    public CompositeNumberEntity(String name, Function<String, String> abbreviator) {
         super(name, abbreviator);
         init();
     }
 
-    public CompositeAttribute(String name, String abbreviation) {
+    public CompositeNumberEntity(String name, String abbreviation) {
         super(name, abbreviation);
         init();
     }
 
-    public CompositeAttribute(String name) {
+    public CompositeNumberEntity(String name) {
         super(name);
         init();
     }

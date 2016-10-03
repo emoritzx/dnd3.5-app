@@ -4,7 +4,7 @@
 package dndlib.character;
 
 import dndlib.core.BonusType;
-import dndlib.core.CompositeAttribute;
+import dndlib.core.CompositeNumberEntity;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -16,7 +16,7 @@ import javafx.beans.property.SimpleIntegerProperty;
  *
  * @author emori
  */
-public class ArmorClass extends CompositeAttribute {
+public class ArmorClass extends CompositeNumberEntity {
 
     @Override
     public Collection<BonusType> getBonusTypes() {

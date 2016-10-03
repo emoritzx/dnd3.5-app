@@ -11,17 +11,17 @@ import javafx.beans.property.SimpleIntegerProperty;
  *
  * @author emori
  */
-public class IntegerAttribute extends ValueAttribute {
+public class SimpleNumberEntity extends AbstractNumberEntity {
 
-    public IntegerAttribute(String name, Function<String, String> abbreviator) {
+    public SimpleNumberEntity(String name, Function<String, String> abbreviator) {
         super(name, abbreviator);
     }
 
-    public IntegerAttribute(String name, String abbreviation) {
+    public SimpleNumberEntity(String name, String abbreviation) {
         super(name, abbreviation);
     }
 
-    public IntegerAttribute(String name) {
+    public SimpleNumberEntity(String name) {
         super(name);
     }
     

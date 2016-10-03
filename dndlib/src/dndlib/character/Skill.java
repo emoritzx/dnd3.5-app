@@ -3,7 +3,7 @@
  */
 package dndlib.character;
 
-import dndlib.core.CompositeAttributeBuilder;
+import dndlib.core.CompositeNumberBuilder;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.IntegerProperty;
@@ -24,7 +24,7 @@ public class Skill extends AbilityAttribute {
     private final IntegerProperty value = new SimpleIntegerProperty();
 
     public Skill(Ability ability, String name, boolean trainedOnly, boolean armorPenalty) {
-        super(ability, CompositeAttributeBuilder.defaults(), name);
+        super(ability, CompositeNumberBuilder.defaults(), name);
         this.armorPenalty = armorPenalty;
         this.trainedOnly = trainedOnly;
         trained.bind(

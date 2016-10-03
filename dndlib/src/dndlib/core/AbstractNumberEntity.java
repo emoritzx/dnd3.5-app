@@ -10,17 +10,17 @@ import javafx.beans.property.IntegerProperty;
  *
  * @author emori
  */
-public abstract class ValueAttribute extends Attribute {
+public abstract class AbstractNumberEntity extends Entity {
 
-    public ValueAttribute(String name, Function<String, String> abbreviator) {
+    public AbstractNumberEntity(String name, Function<String, String> abbreviator) {
         super(name, abbreviator);
     }
 
-    public ValueAttribute(String name, String abbreviation) {
+    public AbstractNumberEntity(String name, String abbreviation) {
         super(name, abbreviation);
     }
 
-    public ValueAttribute(String name) {
+    public AbstractNumberEntity(String name) {
         super(name);
     }
     public abstract IntegerProperty valueProperty();

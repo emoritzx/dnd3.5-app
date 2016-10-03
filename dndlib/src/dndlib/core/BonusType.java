@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  *
  * @author emori
  */
-public class BonusType extends Attribute {
+public class BonusType extends Entity {
 
     public static final IntBinaryOperator DefaultOperator = Integer::max;
 

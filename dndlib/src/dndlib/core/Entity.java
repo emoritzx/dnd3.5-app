@@ -6,21 +6,21 @@ import java.util.function.Function;
  *
  * @author emori
  */
-public class Attribute {
+public class Entity {
 
     private final String name;
     private final String abbreviation;
 
-    public Attribute(String name) {
+    public Entity(String name) {
         this(name, Function.identity());
     }
     
-    public Attribute(String name, Function<String, String> abbreviator)
+    public Entity(String name, Function<String, String> abbreviator)
     {
         this(name, abbreviator.apply(name));
     }
 
-    public Attribute(String name, String abbreviation) {
+    public Entity(String name, String abbreviation) {
         this.name = name;
         this.abbreviation = abbreviation;
     }
