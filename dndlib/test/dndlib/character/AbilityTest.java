@@ -1,7 +1,7 @@
 /*
  * Think about the license.
  */
-package dndlib.character.test;
+package dndlib.character;
 
 import dndlib.character.Ability;
 import static org.testng.Assert.*;

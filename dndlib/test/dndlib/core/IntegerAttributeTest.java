@@ -1,7 +1,7 @@
 /*
  * Think about the license.
  */
-package dndlib.core.test;
+package dndlib.core;
 
 import dndlib.core.SimpleNumberEntity;
 import static org.testng.Assert.*;
