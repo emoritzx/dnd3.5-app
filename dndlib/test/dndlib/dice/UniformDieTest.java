@@ -15,17 +15,32 @@ import org.testng.annotations.Test;
 public class UniformDieTest {
     
     @DataProvider
-    public Object[][] getData() {
+    public Object[][] getLegalBounds() {
         return new Object[][]{
             {-10, 10},
             {1, 5},
-            {50, 100000}
+            {50, 100000},
+            {1, 1},
+            {0, 0},
+            {-1, 0}
+        };
+    }
+    
+    @DataProvider
+    public Object[][] getIllegalBounds() {
+        return new Object[][]{
+            {0, -1},
+            {2, -10},
+            {-10, -12}
         };
     }
 
+    @Test(dataProvider = "getIllegalBounds", expectedExceptions = IllegalArgumentException.class)
+    public void invalidBoundsTest(int lower, int upper) {
+        UniformDie uniformDie = new UniformDie(lower, upper);
+    }
     
-    
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getLegalBounds")
     public void rollTest(int lower, int upper) {
         UniformDie die = new UniformDie(lower, upper);
         IntStream
@@ -37,21 +52,21 @@ public class UniformDieTest {
             });
     }
     
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getLegalBounds")
     public void getLowerTest(int lower, int upper) {
         UniformDie die = new UniformDie(lower, upper);
         int actual = die.getLower();
         assertEquals(actual, lower);
     }
     
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getLegalBounds")
     public void getUpperTest(int lower, int upper) {
         UniformDie die = new UniformDie(lower, upper);
         int actual = die.getUpper();
         assertEquals(actual, upper);
     }
     
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getLegalBounds")
     public void getSizeTest(int lower, int upper) {
         int expected = upper - lower + 1;
         UniformDie die = new UniformDie(lower, upper);
