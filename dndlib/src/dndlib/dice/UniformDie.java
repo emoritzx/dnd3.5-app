@@ -32,7 +32,7 @@ public class UniformDie implements Die {
 
     @Override
     public int getSize() {
-        return upper - lower;
+        return upper - lower + 1;
     }
     
     @Override
