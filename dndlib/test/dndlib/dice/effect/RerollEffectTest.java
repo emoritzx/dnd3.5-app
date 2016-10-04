@@ -1,8 +1,13 @@
 /*
  * Think about the license.
  */
-package dndlib.dice;
+package dndlib.dice.effect;
 
+import dndlib.dice.ConstantDie;
+import dndlib.dice.Die;
+import dndlib.dice.UniformDie;
+import dndlib.dice.effect.RerollEffect;
+import dndlib.dice.effect.DiceEffect;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;

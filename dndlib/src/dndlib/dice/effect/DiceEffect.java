@@ -1,8 +1,9 @@
 /*
  * Think about the license.
  */
-package dndlib.dice;
+package dndlib.dice.effect;
 
+import dndlib.dice.Die;
 import java.util.function.Function;
 import java.util.stream.Stream;
 

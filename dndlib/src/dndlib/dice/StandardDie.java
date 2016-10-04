@@ -15,6 +15,6 @@ public class StandardDie extends UniformDie {
 
     @Override
     public String toString() {
-        return "d" + getUpper();
+        return "d" + getSize();
     }
 }

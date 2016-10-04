@@ -53,20 +53,6 @@ public class UniformDieTest {
     }
     
     @Test(dataProvider = "getLegalBounds")
-    public void getLowerTest(int lower, int upper) {
-        UniformDie die = new UniformDie(lower, upper);
-        int actual = die.getLower();
-        assertEquals(actual, lower);
-    }
-    
-    @Test(dataProvider = "getLegalBounds")
-    public void getUpperTest(int lower, int upper) {
-        UniformDie die = new UniformDie(lower, upper);
-        int actual = die.getUpper();
-        assertEquals(actual, upper);
-    }
-    
-    @Test(dataProvider = "getLegalBounds")
     public void getSizeTest(int lower, int upper) {
         int expected = upper - lower + 1;
         UniformDie die = new UniformDie(lower, upper);

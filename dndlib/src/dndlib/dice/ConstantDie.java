@@ -7,26 +7,14 @@ package dndlib.dice;
  *
  * @author emori
  */
-public class ConstantDie implements Die {
-
-    private final int value;
+public class ConstantDie extends ScriptedDie {
 
     public ConstantDie(int value) {
-        this.value = value;
-    }
-
-    @Override
-    public int roll() {
-        return value;
-    }
-
-    @Override
-    public int getSize() {
-        return value;
+        super(value, () -> value);
     }
     
     @Override
     public String toString() {
-        return "constant " + value;
+        return "constant " + getSize();
     }
 }
