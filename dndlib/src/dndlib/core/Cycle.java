@@ -11,7 +11,11 @@ import java.util.function.Supplier;
  *
  * @author emori
  */
-public class Cycle {
+public final class Cycle {
+    
+    private Cycle() throws InstantiationException {
+        throw new InstantiationException();
+    }
     
     public static <T> Iterator<T> iterator(Collection<T> collection) {
         return new Iterator<T>() {

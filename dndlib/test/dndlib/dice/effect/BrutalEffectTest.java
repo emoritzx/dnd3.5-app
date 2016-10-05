@@ -5,8 +5,6 @@ package dndlib.dice.effect;
 
 import dndlib.dice.Die;
 import dndlib.dice.ScriptedDie;
-import dndlib.dice.effect.DiceEffect;
-import dndlib.dice.effect.BrutalEffect;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
