@@ -35,7 +35,7 @@ define(
                 amount += skill;
             }
             return amount;
-        }
+        };
         
         return Level;
     }
