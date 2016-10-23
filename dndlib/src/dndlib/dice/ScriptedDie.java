@@ -3,7 +3,7 @@
  */
 package dndlib.dice;
 
-import dndlib.core.Cycle;
+import dndlib.structures.Cycle;
 import java.util.Collection;
 import java.util.function.Supplier;
 

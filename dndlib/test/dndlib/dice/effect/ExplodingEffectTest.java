@@ -3,7 +3,7 @@
  */
 package dndlib.dice.effect;
 
-import dndlib.core.Cycle;
+import dndlib.structures.Cycle;
 import dndlib.dice.ConstantDie;
 import dndlib.dice.Die;
 import dndlib.dice.ScriptedDie;

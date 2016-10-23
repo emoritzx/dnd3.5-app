@@ -3,7 +3,7 @@
  */
 package dndlib.character;
 
-import dndlib.character.Ability;
+import dndlib.structures.NameEntity;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 
@@ -15,8 +15,8 @@ public class AbilityTest {
 
     @Test
     public void calculateModifierTest() {
-        Ability ability = new Ability("");
+        Ability ability = new Ability(new NameEntity(""));
         ability.setValue(14);
-        assertEquals(ability.getModifier(), 2, "modifier butts");
+        assertEquals(ability.getModifier(), 2);
     }
 }

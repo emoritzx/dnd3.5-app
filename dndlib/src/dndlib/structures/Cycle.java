@@ -1,7 +1,7 @@
 /*
  * Think about the license.
  */
-package dndlib.core;
+package dndlib.structures;
 
 import java.util.Collection;
 import java.util.Iterator;

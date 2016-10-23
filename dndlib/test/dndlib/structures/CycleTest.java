@@ -1,8 +1,9 @@
 /*
  * Think about the license.
  */
-package dndlib.core;
+package dndlib.structures;
 
+import dndlib.structures.Cycle;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;

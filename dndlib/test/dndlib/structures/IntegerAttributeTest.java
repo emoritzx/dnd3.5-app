@@ -1,9 +1,8 @@
 /*
  * Think about the license.
  */
-package dndlib.core;
+package dndlib.structures;
 
-import dndlib.core.SimpleNumberEntity;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 
@@ -14,7 +13,7 @@ import org.testng.annotations.Test;
 public class IntegerAttributeTest {
     @Test
     public void simpleSetAndGetTest() {
-        SimpleNumberEntity attribute = new SimpleNumberEntity("");
+        NumberEntity attribute = new NumberEntity();
         attribute.setValue(10);
         assertEquals(attribute.getValue(), 10);
     }

@@ -3,7 +3,7 @@
  */
 package dndlib.dice;
 
-import dndlib.core.Cycle;
+import dndlib.structures.Cycle;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;

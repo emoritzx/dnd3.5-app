@@ -3,6 +3,8 @@
  */
 package dndlib.character;
 
+import dndlib.core.Enhancement;
+
 /**
  *
  * @author emori

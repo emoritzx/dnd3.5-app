@@ -3,7 +3,9 @@
  */
 package dndlib.character;
 
-import dndlib.core.Entity;
+import dndlib.core.ScalableDefinition;
+import dndlib.core.Enhancement;
+import dndlib.structures.NameEntity;
 import dndlib.dice.Die;
 import java.util.Set;
 
@@ -11,7 +13,7 @@ import java.util.Set;
  *
  * @author emori
  */
-public class ClassDefinition extends Entity {
+public class ClassDefinition extends NameEntity implements ScalableDefinition {
 
     private final Die hitDie;
     private final int skillModifier;
@@ -27,6 +29,11 @@ public class ClassDefinition extends Entity {
         this.hitDie = hitDie;
         this.skillModifier = skillModifier;
         this.skills = skills;
+    }
+
+    @Override
+    public Enhancement getEntry(int level) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     public Die getHitDie() {

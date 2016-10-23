@@ -1,7 +1,7 @@
 /*
  * Think about the license.
  */
-package dndlib.character;
+package dndlib.core;
 
 import java.util.Map;
 

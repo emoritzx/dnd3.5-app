@@ -1,6 +1,9 @@
 package dndlib.character;
 
-import dndlib.core.SimpleNumberEntity;
+import dndlib.core.Named;
+import dndlib.core.NamedObservable;
+import dndlib.core.NumberedObservable;
+import dndlib.structures.NumberEntity;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
@@ -8,7 +11,7 @@ import javafx.beans.property.SimpleIntegerProperty;
  *
  * @author emori
  */
-public class Ability extends SimpleNumberEntity {
+public class Ability extends NumberEntity implements Named, NumberedObservable {
 
     public static String abbreviate(String string) {
         return (string.length() <= 3)
@@ -16,15 +19,26 @@ public class Ability extends SimpleNumberEntity {
                 : string.substring(0, 3).toUpperCase();
     }
 
+    private final Named name;
     private final IntegerProperty modifier = new SimpleIntegerProperty();
-
-    public Ability(String name) {
-        super(name, Ability::abbreviate);
+    
+    public Ability(Named name) {
+        this.name = name;
         modifier.bind(super.valueProperty().subtract(10).divide(2));
+    }
+
+    @Override
+    public String getAbbreviation() {
+        return name.getAbbreviation();
     }
 
     public final int getModifier() {
         return modifier.intValue();
+    }
+
+    @Override
+    public String getName() {
+        return name.getName();
     }
 
     public IntegerProperty modifierProperty() {
