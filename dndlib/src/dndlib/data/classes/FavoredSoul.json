@@ -1,0 +1,30 @@
+{
+    "name": "Favored Soul",
+    "hitDie": 8,
+    "skillModifier": 2,
+    "skills": [
+        "Concentration",
+        "Craft (...)",
+        "Diplomacy",
+        "Heal",
+        "Jump",
+        "Knowledge (Arcana)",
+        "Profession",
+        "Profession (Arbiter)",
+        "Sense Motive",
+        "Spellcraft"
+    ],
+    "enhancements": [
+        {
+            "slot": "Level 1",
+            "armor": {
+                "class": 10
+            },
+            "saves": {
+                "Fortitude": 2,
+                "Reflex": 2,
+                "Will": 2
+            }
+        }
+    ]
+}
