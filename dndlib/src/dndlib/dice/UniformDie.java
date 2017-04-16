@@ -12,8 +12,10 @@ import java.util.concurrent.ThreadLocalRandom;
 public class UniformDie extends ScriptedDie {
 
     public UniformDie(int lower, int upper) {
-        super(upper - lower + 1,
-            () -> ThreadLocalRandom.current().nextInt(lower, upper + 1));
+        super(
+            upper - lower + 1,
+            () -> ThreadLocalRandom.current().nextInt(lower, upper + 1)
+        );
         if (lower > upper) {
             throw new IllegalArgumentException(String.format("%d > %d", lower, upper));
         }

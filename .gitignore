@@ -8,3 +8,6 @@
 /dndlib/build/
 /dndlib/dist/
 .jacocoverage
+/dndlib.data/nbproject/private/
+/dndlib.data/build/
+/dndlib.data/dist/

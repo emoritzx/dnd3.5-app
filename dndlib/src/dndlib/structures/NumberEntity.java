@@ -28,7 +28,7 @@ public class NumberEntity implements NumberedObservable {
         return value.intValue();
     }
 
-    public final void setValue(int value) {
+    protected final void setValue(int value) {
         this.value.setValue(value);
     }
 

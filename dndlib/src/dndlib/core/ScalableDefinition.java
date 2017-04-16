@@ -3,12 +3,10 @@
  */
 package dndlib.core;
 
-import dndlib.core.Enhancement;
-
 /**
  *
  * @author emori
  */
-public interface ScalableDefinition {
-    public Enhancement getEntry(int level);
+public interface ScalableDefinition<T> {
+    public T atLevel(int level);
 }

@@ -4,6 +4,7 @@
 package dndlib.json;
 
 import dndlib.core.Enhancement;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -25,10 +26,12 @@ public class JsonEnhancement implements Enhancement{
     public static final String SLOT_ID = "slot";
     
     public static List<Enhancement> fromList(JsonArray json) {
-        return json.stream()
-            .map(JsonObject.class::cast)
-            .map(JsonEnhancement::new)
-            .collect(Collectors.toList());
+        return json == null
+            ? Collections.emptyList()
+            : json.stream()
+                .map(JsonObject.class::cast)
+                .map(JsonEnhancement::new)
+                .collect(Collectors.toList());
     }
     
     private final Map<String, Integer> abilities;

@@ -3,11 +3,9 @@
  */
 package dndlib.character;
 
-import dndlib.core.ScalableDefinition;
 import dndlib.core.Enhancement;
 import dndlib.structures.NameEntity;
 import dndlib.dice.Die;
-import java.util.List;
 import java.util.Set;
 
 /**

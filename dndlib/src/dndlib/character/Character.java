@@ -3,12 +3,13 @@
  */
 package dndlib.character;
 
+import dndlib.core.Enhancement;
 import dndlib.core.Named;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.Collectors;
-import javafx.beans.binding.IntegerBinding;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -17,23 +18,31 @@ import javafx.collections.ObservableList;
  * @author emori
  */
 public class Character implements Named {
-
-    private final IntegerBinding healthPointsBinding;
-
-    private final ObservableList<Level> levels = FXCollections.observableArrayList();
     
-    private final IntegerProperty healthPoints = new SimpleIntegerProperty();
-    private final String name;
+    public static final String HEALTH_ABILITY = "Constitution";
 
-    public Character(String name) {
+    private final Map<String, Ability> abilities;
+    private final HitPoints hp;
+    private final ObservableList<Level> levels = FXCollections.observableArrayList();
+    private final String name;
+    private final Map<String, Skill> skills = new HashMap<>();
+
+    public Character(String name, Map<String, Ability> abilities, Enhancement race) {
         this.name = name;
-        healthPointsBinding = new IntegerBinding() {
-            @Override
-            protected int computeValue() {
-                return levels.stream().mapToInt(level -> level.getClassDefinition().getHitDie().roll()).sum();
-            }
-        };
-        healthPoints.bind(healthPointsBinding);
+        this.abilities = Collections.unmodifiableMap(abilities);
+        applyRace(race);
+        this.hp = new HitPoints(abilities.get(HEALTH_ABILITY), levels);
+//        levels.addListener(() -> );
+    }
+
+    private void applyRace(Enhancement race) {
+        race
+            .getAbilities()
+            .forEach((ability, value) -> abilities.get(ability).adjust(value));
+    }
+
+    public void damage(int hit, int damage, String... types) {
+        hp.damage(damage);
     }
 
     @Override
@@ -43,22 +52,25 @@ public class Character implements Named {
             .map(word -> String.valueOf(java.lang.Character.toUpperCase(word.charAt(0))))
             .collect(Collectors.joining());
     }
-
-    public int getHealthPoints() {
-        return healthPoints.get();
-    }
     
-    public IntegerProperty getHealthPointsProperty() {
-        return healthPoints;
+    public HitPoints getHitPoints() {
+        return hp;
     }
     
     public void addLevel(Level level) {
        levels.add(level);
-       healthPointsBinding.invalidate();
     }
 
     @Override
     public String getName() {
         return name;
+    }
+    
+    public Map<String, Ability> getAbilities() {
+        return abilities;
+    }
+    
+    public Map<String, Skill> getSkills() {
+        return skills;
     }
 }

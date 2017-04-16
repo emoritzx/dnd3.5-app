@@ -110,5 +110,4 @@ public class Skill implements Named, NumberedObservable {
     public BooleanProperty trainedProperty() {
         return trained;
     }
-
 }

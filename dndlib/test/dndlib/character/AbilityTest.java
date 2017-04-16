@@ -15,8 +15,7 @@ public class AbilityTest {
 
     @Test
     public void calculateModifierTest() {
-        Ability ability = new Ability(new NameEntity(""));
-        ability.setValue(14);
+        Ability ability = new Ability(new NameEntity(""), 14);
         assertEquals(ability.getModifier(), 2);
     }
 }
