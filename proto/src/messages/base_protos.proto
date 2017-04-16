@@ -1,7 +1,0 @@
-syntax = "proto2";
-
-package dndapp.proto.messages;
-
-message Attribute {
-    required string name = 1;
-}
