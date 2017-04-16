@@ -11,3 +11,7 @@
 /dndlib.data/nbproject/private/
 /dndlib.data/build/
 /dndlib.data/dist/
+/dndlib_maven/target/
+/dndlib.data.maven/target/
+/dndlib/target/
+/dndlib.data/target/
