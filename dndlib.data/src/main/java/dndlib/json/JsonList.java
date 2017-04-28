@@ -12,17 +12,30 @@ import javax.json.JsonString;
 import javax.json.JsonValue;
 
 /**
- *
- * @author emori
+ * Deserializes JSON data in the form of homogenous single-level arrays
+ * 
+ * Example:
+ * <code>
+ * [
+ *     value1,
+ *     value2,
+ *     value3
+ * ]
+ * </code>
+ * 
+ * @author E. Moritz
  */
-public class JsonList {
+
+public final class JsonList {
+
     /**
+     * Deserialize a JSON array with the given converter function
      * 
-     * @param <T>
-     * @param <J>
-     * @param json
-     * @param converter
-     * @return 
+     * @param <T> Value type
+     * @param <J> JSON data type
+     * @param json JSON array
+     * @param converter JsonValue to value type converter
+     * @return List of values
      */
     public static <T, J extends JsonValue> List<T> fromArray(JsonArray json, Function<J, T> converter) {
         return json == null
@@ -30,15 +43,20 @@ public class JsonList {
             : json
                 .stream()
                 .map(value -> converter.apply((J) value))
-                .collect(Collectors.toList());
+                .collect(Collectors.collectingAndThen(
+                    Collectors.toList(),
+                    Collections::unmodifiableList));
     }
-    
+
     /**
+     * Deserialize a JSON array of strings with the given converter function
      * 
-     * @param <T>
-     * @param json
-     * @param converter
-     * @return 
+     * This is a specialization of JsonList.fromArray() for the JsonString type.
+     * 
+     * @param <T> Value type
+     * @param json JSON array
+     * @param converter JsonString to value converter
+     * @return List of values
      */
     public static <T> List<T> fromStringArray(JsonArray json, Function<JsonString, T> converter) {
         return fromArray(json, converter);

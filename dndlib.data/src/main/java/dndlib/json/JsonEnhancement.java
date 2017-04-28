@@ -13,22 +13,47 @@ import javax.json.JsonNumber;
 import javax.json.JsonObject;
 
 /**
- *
- * @author emori
+ * Deserializes JSON data into an Enhancement object
+ * 
+ * Example:
+ * <code>
+ * {
+ *     "abilities": <JsonMap:Integer>,
+ *     "armor": <JsonMap:Integer>,
+ *     "bab": <Integer>,
+ *     "saves": <JsonMap:Integer>,
+ *     "skills": <JsonMap:Integer>,
+ *     "slot": <String>
+ * }
+ * </code>
+ * 
+ * @author E. Moritz
  */
-public class JsonEnhancement implements Enhancement{
+public final class JsonEnhancement implements Enhancement {
 
+    /** JSON key: abilities */
     public static final String ABILITY_ID = "abilities";
+
+    /** JSON key: armor */
     public static final String ARMOR_ID = "armor";
+
+    /** JSON key: bab */
     public static final String BAB_ID = "bab";
+
+    /** JSON key: saves */
     public static final String SAVE_ID = "saves";
+
+    /** JSON key: skills */
     public static final String SKILL_ID = "skills";
+
+    /** JSON key: slot */
     public static final String SLOT_ID = "slot";
-    
+
     /**
+     * Deserialize a JsonArray of Enhancements
      * 
-     * @param json
-     * @return 
+     * @param json JSON array
+     * @return List of enhancements
      */
     public static List<Enhancement> fromList(JsonArray json) {
         return json == null
@@ -38,7 +63,8 @@ public class JsonEnhancement implements Enhancement{
                 .map(JsonEnhancement::new)
                 .collect(Collectors.toList());
     }
-    
+
+    // private member fields
     private final Map<String, Integer> abilities;
     private final Map<String, Integer> armor;
     private final int bab;
@@ -46,9 +72,13 @@ public class JsonEnhancement implements Enhancement{
     private final Map<String, Integer> skills;
     private final String slot;
     
+
     /**
+     * Constructor
      * 
-     * @param json 
+     * Parses the values from the JSON object
+     * 
+     * @param json JSON object
      */
     public JsonEnhancement(JsonObject json) {
         abilities = JsonMap.fromNumber(json.getJsonObject(ABILITY_ID), JsonNumber::intValue);
@@ -59,31 +89,61 @@ public class JsonEnhancement implements Enhancement{
         slot = json.getString(SLOT_ID, "<unslotted>");
     }
 
+    /**
+     * Get map of ability name to value
+     * 
+     * @return Ability map
+     */
     @Override
     public Map<String, Integer> getAbilities() {
         return abilities;
     }
 
+    /**
+     * Get map of armor type to value
+     * 
+     * @return Armor map
+     */
     @Override
     public Map<String, Integer> getArmor() {
         return armor;
     }
 
+    /**
+     * Get base attack bonus
+     * 
+     * @return Base attack bonus
+     */
     @Override
     public int getBaseAttackBonus() {
         return bab;
     }
 
+    /**
+     * Get map of save name to value
+     * 
+     * @return Save map
+     */
     @Override
     public Map<String, Integer> getSaves() {
         return saves;
     }
 
+    /**
+     * Get map of skill name to value
+     * 
+     * @return Skill map
+     */
     @Override
     public Map<String, Integer> getSkills() {
         return skills;
     }
 
+    /**
+     * Get slot name
+     * 
+     * @return Slot name
+     */
     @Override
     public String getSlot() {
         return slot;
