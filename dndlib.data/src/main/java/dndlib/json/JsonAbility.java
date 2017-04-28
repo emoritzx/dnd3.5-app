@@ -18,6 +18,11 @@ import javax.json.JsonObject;
  */
 public class JsonAbility {
 
+    /**
+     * 
+     * @param json
+     * @return 
+     */
     public static Map<String, Ability> fromShortForm(JsonArray json) {
         return JsonList
             .fromStringArray(
@@ -27,6 +32,11 @@ public class JsonAbility {
             .collect(NamedHashMap.collector());
     }
     
+    /**
+     * 
+     * @param json
+     * @return 
+     */
     public static Map<String, Ability> fromLongForm(JsonObject json) {
         return JsonMap
             .fromNumber(

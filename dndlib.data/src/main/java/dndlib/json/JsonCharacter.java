@@ -30,6 +30,13 @@ public class JsonCharacter {
     public static final String NAME_ID = "name";
     public static final String RACE_ID = "race";
     
+    /**
+     * 
+     * @param json
+     * @param raceConverter
+     * @param classConverter
+     * @return 
+     */
     public static dndlib.character.Character from(
         JsonObject json,
         Function<String, Enhancement> raceConverter,
@@ -47,6 +54,13 @@ public class JsonCharacter {
         return c;
     }
     
+    /**
+     * 
+     * @param level
+     * @param json
+     * @param classConverter
+     * @return 
+     */
     public static Level parseLevel(
         int level,
         JsonObject json, 

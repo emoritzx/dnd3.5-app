@@ -30,6 +30,11 @@ public final class JsonClassDefinition {
     
     private final List<ClassDefinition> list;
 
+    /**
+     * 
+     * @param json
+     * @param dieConverter 
+     */
     public JsonClassDefinition(JsonObject json, BiFunction<Integer, Integer, Die> dieConverter) {
         String name = json.getString(NAME_ID);
         int skillModifier = json.getInt(SKILLMOD_ID);
@@ -46,6 +51,11 @@ public final class JsonClassDefinition {
             .collect(Collectors.toList());
     }
     
+    /**
+     * 
+     * @param level
+     * @return 
+     */
     public ClassDefinition getClassForLevel(int level) {
         return list.get(level - 1);
     }

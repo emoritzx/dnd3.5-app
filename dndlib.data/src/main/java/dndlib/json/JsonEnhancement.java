@@ -25,6 +25,11 @@ public class JsonEnhancement implements Enhancement{
     public static final String SKILL_ID = "skills";
     public static final String SLOT_ID = "slot";
     
+    /**
+     * 
+     * @param json
+     * @return 
+     */
     public static List<Enhancement> fromList(JsonArray json) {
         return json == null
             ? Collections.emptyList()
@@ -41,6 +46,10 @@ public class JsonEnhancement implements Enhancement{
     private final Map<String, Integer> skills;
     private final String slot;
     
+    /**
+     * 
+     * @param json 
+     */
     public JsonEnhancement(JsonObject json) {
         abilities = JsonMap.fromNumber(json.getJsonObject(ABILITY_ID), JsonNumber::intValue);
         armor = JsonMap.fromNumber(json.getJsonObject(ARMOR_ID), JsonNumber::intValue);

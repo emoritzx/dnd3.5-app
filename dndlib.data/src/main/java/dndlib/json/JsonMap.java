@@ -18,6 +18,14 @@ import javax.json.JsonValue;
  */
 public class JsonMap {
     
+    /**
+     * 
+     * @param <T>
+     * @param <J>
+     * @param json
+     * @param converter
+     * @return 
+     */
     public static <T, J extends JsonValue> Map<String, T> from(JsonObject json, BiFunction<String, J, T> converter) {
         return json == null
             ? Collections.emptyMap()
@@ -30,6 +38,13 @@ public class JsonMap {
                 ));
     }
     
+    /**
+     * 
+     * @param <T>
+     * @param json
+     * @param converter
+     * @return 
+     */
     public static <T> Map<String, T> fromNumber(JsonObject json, Function<JsonNumber, T> converter) {
         return from(
             json,
@@ -37,6 +52,13 @@ public class JsonMap {
         );
     }
     
+    /**
+     * 
+     * @param <T>
+     * @param json
+     * @param converter
+     * @return 
+     */
     public static <T> Map<String, T> fromNumber(JsonObject json, BiFunction<String, JsonNumber, T> converter) {
         return from(json, converter);
     }
