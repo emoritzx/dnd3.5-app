@@ -1,0 +1,9 @@
+<#assign licenseFirst = "/**">
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Copyright (c) 2016-2017, Evan Moritz.
+${licensePrefix}Licensed under the MIT License. See the accompanying LICENSE file for terms.
+<#if licenseLast??>
+${licenseLast}
+</#if>

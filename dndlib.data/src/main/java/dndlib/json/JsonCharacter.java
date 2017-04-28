@@ -1,7 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Copyright (c) 2016-2017, Evan Moritz.
+ * Licensed under the MIT License. See the accompanying LICENSE file for terms.
  */
 package dndlib.json;
 
@@ -76,7 +75,6 @@ public final class JsonCharacter {
             .forEach(c::addLevel);
         return c;
     }
-
 
     /**
      * Deserializes a JSON object into a Level
