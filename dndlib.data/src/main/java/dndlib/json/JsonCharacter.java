@@ -18,18 +18,48 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 
 /**
+ * Deserializes JSON data into a Character
  *
- * @author emori
+ * Example:
+ * <code>
+ * {
+ *     "abilities": <JsonMap:Ability>,
+ *     "levels": <JsonList:(ClassDefinition, JsonList:Enhancement)>,
+ *     "name": <String>,
+ *     "race": <String>
+ * }
+ * </code>
+ * 
+ * @author E. Moritz
  */
-public class JsonCharacter {
-    
+public final class JsonCharacter {
+
+    /** JSON key: abilities */
     public static final String ABILITY_ID = "abilities";
+
+    /** JSON key: class */
     public static final String CLASS_ID = "class";
+
+    /** JSON key: enhancements */
     public static final String ENHANCEMENT_ID = "enhancements";
+
+    /** JSON key: levels */
     public static final String LEVEL_ID = "levels";
+
+    /** JSON key: name */
     public static final String NAME_ID = "name";
+
+    /** JSON key: race */
     public static final String RACE_ID = "race";
-    
+
+    /**
+     * Deserializes a JSON object into a Character
+     * 
+     * @param json JSON object
+     * @param raceConverter Race name to Enhancement converter
+     * @param classConverter (Class name, level) to ClassDefinition converter
+     * @return Character
+     */
     public static dndlib.character.Character from(
         JsonObject json,
         Function<String, Enhancement> raceConverter,
@@ -46,7 +76,15 @@ public class JsonCharacter {
             .forEach(c::addLevel);
         return c;
     }
-    
+
+    /**
+     * Deserializes a JSON object into a Level
+     * 
+     * @param level Level ordinal
+     * @param json JSON object
+     * @param classConverter (Class name, level) to ClassDefinition converter
+     * @return Level
+     */
     public static Level parseLevel(
         int level,
         JsonObject json, 
