@@ -14,9 +14,11 @@
                 <configuration>
                     <targetClasses>
                         <param>dndlib.json.JsonAbility</param>
+                        <param>dndlib.json.JsonList</param>
                     </targetClasses>
                     <targetTests>
                         <param>dndlib.json.JsonAbilityTest</param>
+                        <param>dndlib.json.JsonListTest</param>
                     </targetTests>
                 </configuration>
             </plugin>
@@ -43,6 +45,12 @@
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
             <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.7.22</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
