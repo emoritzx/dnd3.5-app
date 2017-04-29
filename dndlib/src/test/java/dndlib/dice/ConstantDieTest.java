@@ -11,9 +11,6 @@ import static org.junit.Assert.*;
  */
 public class ConstantDieTest {
 
-    public ConstantDieTest() {
-    }
-
     /**
      * Test of toString method, of class ConstantDie.
      */
@@ -39,12 +36,10 @@ public class ConstantDieTest {
      */
     @Test
     public void testLevelAdjustment() {
-       BiFunction<Integer, Integer, Die> adjFnc = 
-               ConstantDie.levelAdjustment((in)-> Math.floorDiv(in, 3));
-       ConstantDie die6 = new ConstantDie(6);
-       assertEquals(die6.getSize(), adjFnc.apply(1, 6).getSize());
-       ConstantDie die2 = new ConstantDie(2);
-       assertEquals(die2.getSize(), adjFnc.apply(2, 6).getSize());
+        BiFunction<Integer, Integer, Die> adjFnc
+                = ConstantDie.levelAdjustment((in) -> Math.floorDiv(in, 3));
+        assertEquals(6, adjFnc.apply(1, 6).getSize());
+        assertEquals(2, adjFnc.apply(2, 6).getSize());
     }
 
 }

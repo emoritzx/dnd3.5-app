@@ -18,20 +18,10 @@
                 <version>1.2.0</version>
                 <configuration>
                     <targetClasses>
-                        <param>dndlib.dice.ConstantDie</param>
-                        <param>dndlib.dice.MemoizedDie</param>
-                        <param>dndlib.dice.ScriptedDie</param>
-                        <param>dndlib.dice.UniformDie</param>
-                        <param>dndlib.dice.StandardDie</param>
-                        <param>dndlib.dice.effect.BrutalEffect</param>
+                        <param>dndlib.dice.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>dndlib.dice.ConstantDieTest</param>
-                        <param>dndlib.dice.MemoizedDieTest</param>
-                        <param>dndlib.dice.ScriptedDieTest</param>
-                        <param>dndlib.dice.UniformDieTest</param>
-                        <param>dndlib.dice.StandardDieTest</param>
-                        <param>dndlib.dice.effect.BrutalEffectTest</param>
+                        <param>dndlib.dice.*</param>
                     </targetTests>
                 </configuration>
             </plugin>

@@ -40,7 +40,7 @@ public class BrutalEffectTest {
     /**
      * Test of apply method, of class BrutalEffect.
      *
-     * @param rollSet the set of rolls that will cause a re-roll
+     * @param rollSet the set of rolls that will cause an additional roll
      */
     @Theory
     public void testApplyTrue(Set<Integer> rollSet) {
@@ -88,5 +88,4 @@ public class BrutalEffectTest {
             assertFalse(effect.test(roll));
         });
     }
-
 }
