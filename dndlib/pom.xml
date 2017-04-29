@@ -20,10 +20,12 @@
                     <targetClasses>
                         <param>dndlib.dice.ConstantDie</param>
                         <param>dndlib.dice.MemoizedDie</param>
+                        <param>dndlib.dice.ScriptedDie</param>
                     </targetClasses>
                     <targetTests>
                         <param>dndlib.dice.ConstantDieTest</param>
                         <param>dndlib.dice.MemoizedDieTest</param>
+                        <param>dndlib.dice.ScriptedDieTest</param>
                     </targetTests>
                 </configuration>
             </plugin>

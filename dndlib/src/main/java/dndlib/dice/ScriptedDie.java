@@ -5,7 +5,7 @@
 package dndlib.dice;
 
 import dndlib.structures.Cycle;
-import java.util.Collection;
+import java.util.List;
 import java.util.function.Supplier;
 
 /**
@@ -48,7 +48,10 @@ public class ScriptedDie implements Die {
      * @param rolls the values to be returned for the rolls of the die
      * @return a ScriptedDie backed by the provided script of roll values.
      */
-    public static Die of(Collection<Integer> rolls) {
+    public static Die of(List<Integer> rolls) {
+        if(rolls.isEmpty()){
+            throw new IllegalArgumentException("List cannot be empty");
+        }
         return new ScriptedDie(rolls.size(), Cycle.supplier(rolls));
     }
 }
