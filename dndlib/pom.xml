@@ -23,6 +23,7 @@
                         <param>dndlib.dice.ScriptedDie</param>
                         <param>dndlib.dice.UniformDie</param>
                         <param>dndlib.dice.StandardDie</param>
+                        <param>dndlib.dice.effect.BrutalEffect</param>
                     </targetClasses>
                     <targetTests>
                         <param>dndlib.dice.ConstantDieTest</param>
@@ -30,6 +31,7 @@
                         <param>dndlib.dice.ScriptedDieTest</param>
                         <param>dndlib.dice.UniformDieTest</param>
                         <param>dndlib.dice.StandardDieTest</param>
+                        <param>dndlib.dice.effect.BrutalEffectTest</param>
                     </targetTests>
                 </configuration>
             </plugin>
