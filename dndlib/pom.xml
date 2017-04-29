@@ -22,12 +22,14 @@
                         <param>dndlib.dice.MemoizedDie</param>
                         <param>dndlib.dice.ScriptedDie</param>
                         <param>dndlib.dice.UniformDie</param>
+                        <param>dndlib.dice.StandardDie</param>
                     </targetClasses>
                     <targetTests>
                         <param>dndlib.dice.ConstantDieTest</param>
                         <param>dndlib.dice.MemoizedDieTest</param>
                         <param>dndlib.dice.ScriptedDieTest</param>
                         <param>dndlib.dice.UniformDieTest</param>
+                        <param>dndlib.dice.StandardDieTest</param>
                     </targetTests>
                 </configuration>
             </plugin>

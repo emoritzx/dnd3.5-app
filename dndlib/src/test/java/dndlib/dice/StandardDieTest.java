@@ -4,23 +4,67 @@
  */
 package dndlib.dice;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Test;
+import org.junit.experimental.theories.DataPoints;
+import org.junit.experimental.theories.Theories;
+import org.junit.experimental.theories.Theory;
+import org.junit.runner.RunWith;
 
 /**
  * Test cases for the StandardDie class
+ *
  * @author sldur
  */
+@RunWith(Theories.class)
 public class StandardDieTest {
-    
-    public StandardDieTest() {
+
+    @DataPoints
+    public static int[] dieSizes = new int[]{
+        1, 6, 20, 10
+    };
+
+    /**
+     * Test of roll method, of class StandardDie.
+     *
+     * @param size the size of the die
+     */
+    @Theory
+    public void testRoll(int size) {
+        StandardDie die = new StandardDie(size);
+        int roll = die.roll();
+        assertTrue(roll >= 1 && roll <= size);
+    }
+
+    /**
+     * Test of getSize method, of class StandardDie.
+     *
+     * @param size the size of the die
+     */
+    @Theory
+    public void testGetSize(int size) {
+        StandardDie die = new StandardDie(size);
+        assertEquals(size, die.getSize());
     }
 
     /**
      * Test of toString method, of class StandardDie.
+     *
+     * @param size the size of the die
      */
-    @Test
-    public void testToString() {
+    @Theory
+    public void testToString(int size) {
+        StandardDie die = new StandardDie(size);
+        String expected = "d" + size;
+        assertEquals(expected, die.toString());
     }
-    
+
+    /**
+     * Test of StandardDie constructor for IllegalArgumentException
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testIllegalArgumentException() {
+        StandardDie die = new StandardDie(0);
+    }
+
 }
