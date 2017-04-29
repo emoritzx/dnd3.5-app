@@ -4,9 +4,10 @@
  */
 package dndlib.json;
 
-import java.math.BigDecimal;
+import dndlib.core.Enhancement;
 import javax.json.Json;
 import javax.json.JsonObject;
+import org.mockito.Mock;
 
 /**
  * Class of static functions to help building JsonObjects to use in testing the
@@ -103,5 +104,34 @@ public class TestHelper {
                 .add(JsonEnhancement.SKILL_ID, getSkill())
                 .build();
     }
+    
+    public static JsonObject getClassDefinition() {
+        return Json.createObjectBuilder()
+                .add(JsonClassDefinition.DIE_ID, 5)
+                .add(JsonClassDefinition.NAME_ID, "gargoyle")
+                .add(JsonClassDefinition.SKILLMOD_ID, 2)
+                .add(JsonClassDefinition.ENHANCEMENT_ID,
+                        Json.createArrayBuilder()
+                        .add(getEnhancementMulti())
+                        .add(getEnhancement1())
+                        .build()
+                ).add(JsonClassDefinition.SKILLS_ID,
+                        Json.createArrayBuilder()
+                                .add("slice")
+                                .add("dice")
+                                .build())
+                .build();
+    }
+    
+    public static boolean equals(Enhancement expected, Enhancement actual) {
+        return expected.getAbilities().equals(actual.getAbilities())
+                && expected.getArmor().equals(actual.getArmor())
+                && expected.getBaseAttackBonus() == actual.getBaseAttackBonus()
+                && expected.getSaves().equals(actual.getSaves())
+                && expected.getSkills().equals(actual.getSkills())
+                && expected.getSlot().equals(actual.getSlot());
+
+    }
+    
 
 }
