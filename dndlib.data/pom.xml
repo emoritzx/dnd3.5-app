@@ -13,18 +13,10 @@
                 <version>1.2.0</version>
                 <configuration>
                     <targetClasses>
-                        <param>dndlib.json.JsonAbility</param>
-                        <param>dndlib.json.JsonList</param>
-                        <param>dndlib.json.JsonMap</param>
-                        <param>dndlib.json.JsonEnhancement</param>
-                        <param>dndlib.json.JsonClassDefinition</param>
+                        <param>dndlib.json.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>dndlib.json.JsonAbilityTest</param>
-                        <param>dndlib.json.JsonListTest</param>
-                        <param>dndlib.json.JsonMapTest</param>
-                        <param>dndlib.json.JsonEnhancementTest</param>
-                        <param>dndlib.json.JsonClassDefinitionTest</param>
+                        <param>dndlib.json.*</param>
                     </targetTests>
                 </configuration>
             </plugin>

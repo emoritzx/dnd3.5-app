@@ -9,6 +9,7 @@ import dndlib.core.Named;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import javafx.collections.FXCollections;
@@ -73,5 +74,9 @@ public class Character implements Named {
     
     public Map<String, Skill> getSkills() {
         return skills;
+    }
+    
+    public List<Level> getLevels(){
+        return this.levels;
     }
 }

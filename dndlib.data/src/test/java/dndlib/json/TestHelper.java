@@ -7,7 +7,6 @@ package dndlib.json;
 import dndlib.core.Enhancement;
 import javax.json.Json;
 import javax.json.JsonObject;
-import org.mockito.Mock;
 
 /**
  * Class of static functions to help building JsonObjects to use in testing the
@@ -20,7 +19,7 @@ public class TestHelper {
     public static JsonObject getAbilities() {
         return Json.createObjectBuilder()
                 .add("strength", 55)
-                .add("e", -4)
+                .add("Constitution", -4)
                 .add("tacos", 0)
                 .build();
     }
@@ -123,6 +122,44 @@ public class TestHelper {
                 .build();
     }
     
+    
+    public static JsonObject getCharacter() {
+        return Json.createObjectBuilder()
+                .add(JsonCharacter.ABILITY_ID, getAbilities())
+                .add(JsonCharacter.NAME_ID, "Starbuck")
+                .add(JsonCharacter.RACE_ID, "feline")
+                .add(JsonCharacter.LEVEL_ID,
+                        Json.createArrayBuilder()
+                        .add(
+                                Json.createObjectBuilder()
+                                .add(JsonCharacter.CLASS_ID, "cat burglar")
+                                .add(JsonCharacter.ENHANCEMENT_ID,
+                                        Json.createArrayBuilder()
+                                        .add(
+                                                Json.createObjectBuilder()
+                                                .add(JsonEnhancement.ARMOR_ID, getArmorSingle())
+                                                .add(JsonEnhancement.SKILL_ID, getSkill())
+                                                .build())
+                                        .add(Json.createObjectBuilder()
+                                                .add(JsonEnhancement.BAB_ID, 5)
+                                                .build()
+                                        ).build()
+                                ).build()
+                        ).add(
+                                Json.createObjectBuilder()
+                                .add(JsonCharacter.CLASS_ID, "Rogue")
+                                .add(JsonCharacter.ENHANCEMENT_ID,
+                                        Json.createArrayBuilder()
+                                        .add(Json.createObjectBuilder()
+                                                .add(JsonEnhancement.SKILL_ID, getSkills())
+                                                .build()
+                                        ).build()
+                                ).build()
+                        ).build()
+                ).build();
+    }
+    
+    
     public static boolean equals(Enhancement expected, Enhancement actual) {
         return expected.getAbilities().equals(actual.getAbilities())
                 && expected.getArmor().equals(actual.getArmor())
@@ -130,7 +167,6 @@ public class TestHelper {
                 && expected.getSaves().equals(actual.getSaves())
                 && expected.getSkills().equals(actual.getSkills())
                 && expected.getSlot().equals(actual.getSlot());
-
     }
     
 
