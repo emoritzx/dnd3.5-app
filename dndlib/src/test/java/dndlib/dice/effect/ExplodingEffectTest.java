@@ -24,6 +24,7 @@ public class ExplodingEffectTest {
     private ExplodingEffect effect = new ExplodingEffect();
     /**
      * Test of apply method, of class ExplodingEffect.
+     * Covers apply def-use path [1,2,3,4]
      */
     @Test
     public void testApplySingleRoll() {
@@ -53,6 +54,7 @@ public class ExplodingEffectTest {
 
     /**
      * Test of test method, of class ExplodingEffect.
+     * Covers test def-use path [1,2]
      */
     @Test
     public void testTest() {

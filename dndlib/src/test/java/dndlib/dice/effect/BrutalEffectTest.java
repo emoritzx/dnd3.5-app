@@ -18,6 +18,7 @@ import static org.mockito.Mockito.when;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 import org.junit.experimental.theories.Theories;
 import org.junit.runner.RunWith;
 import static org.mockito.Mockito.mock;
@@ -39,7 +40,7 @@ public class BrutalEffectTest {
 
     /**
      * Test of apply method, of class BrutalEffect.
-     *
+     * Covers Constructor def-use path [1,2]
      * @param rollSet the set of rolls that will cause an additional roll
      */
     @Theory
@@ -62,8 +63,26 @@ public class BrutalEffectTest {
     }
 
     /**
+     * Test of apply method, of class BrutalEffect.
+     * Covers the apply def-use path [1,2,3,4]
+     * and Constructor def-use path [1,2]
+     */
+    @Test
+    public void testApplyFalse() {
+        BrutalEffect effect = new BrutalEffect(new HashSet());
+        Die die = mock(Die.class);
+        when(die.roll()).thenReturn(1);
+
+        Stream<Integer> stream = effect.apply(die);
+        List<Integer> rolls = stream.collect(Collectors.toList());
+        assertEquals(1, rolls.size());
+        assertEquals(1, rolls.get(0).intValue());
+    }
+
+    /**
      * Test of test method, of class BrutalEffect. All expected values will be
      * true.
+     * Covers the test def-use path [1,2]
      *
      * @param rollSet the set of rolls that will return true
      */
@@ -84,7 +103,7 @@ public class BrutalEffectTest {
     @Theory
     public void testTestFalse(Set<Integer> rollSet) {
         BrutalEffect effect = new BrutalEffect(rollSet);
-        Arrays.asList(0, 7, 12, 2).stream().forEach((roll)-> {
+        Arrays.asList(0, 7, 12, 2).stream().forEach((roll) -> {
             assertFalse(effect.test(roll));
         });
     }

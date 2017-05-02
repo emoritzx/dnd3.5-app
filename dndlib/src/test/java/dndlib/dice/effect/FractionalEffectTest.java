@@ -14,13 +14,15 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- *
+ * Test cases for the FractionalEffect class.
  * @author sldur
  */
 public class FractionalEffectTest {
 
     /**
      * Test of apply method, of class FractionalEffect.
+     * Covers apply def-use path [1,2]
+     * and Constructor def-use path [1,2]
      */
     @Test
     public void testApply() {

@@ -13,6 +13,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import static org.junit.Assert.*;
+import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
@@ -57,8 +58,28 @@ public class RerollEffectTest {
     }
 
     /**
+     * Test of apply method, of class RerollEffect. 
+     * 
+     * Covers the apply def-use
+     * path [1,2,3,4] and Constructor def-use path [1,2]
+     */
+    @Test
+    public void testApplyFalse() {
+        RerollEffect effect = new RerollEffect(new HashSet());
+        Die die = mock(Die.class);
+        when(die.roll()).thenReturn(1);
+
+        Stream<Integer> stream = effect.apply(die);
+        List<Integer> rolls = stream.collect(Collectors.toList());
+        assertEquals(1, rolls.size());
+        assertEquals(1, rolls.get(0).intValue());
+    }
+
+    /**
      * Test of test method, of class RerollEffect. All expected values will be
-     * true.
+     * true. 
+     * 
+     * Covers the test def-use path [1,2]
      *
      * @param rollSet the set of rolls that will return true
      */
