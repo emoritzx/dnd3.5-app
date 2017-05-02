@@ -39,6 +39,8 @@ public class JsonMapTest {
     /**
      * Test of from method, of class JsonMap.
      * Test case with a single entry in the JSON object.
+     * 
+     * Covers from method def-use path [1,2,4,5,6]
      */
     @Test
     public void testFromSingleEntry() {
@@ -63,6 +65,8 @@ public class JsonMapTest {
     /**
      * Test of from method, of class JsonMap.
      * Test case with empty JSON object.
+     * 
+     * Covers from method def-use path [1,2,4,5,7]
      */
     @Test
     public void testFromEmpty(){
@@ -72,6 +76,8 @@ public class JsonMapTest {
     /**
      * Test of from method, of class JsonMap.
      * Test case with null JSON object.
+     * 
+     * Covers from method def-use path [1,2,3]
      */
     @Test
     public void testFromNullJson(){
@@ -83,6 +89,8 @@ public class JsonMapTest {
     /**
      * Test of fromNumber method, of class JsonMap.
      * Test case with a single entry in the JSON object.
+     * 
+     * Covers fromNumber(Function) def-use path [1,2]
      */
     @Test
     public void testFromNumberSingleEntry() {
@@ -126,6 +134,8 @@ public class JsonMapTest {
     /**
      * Test of fromNumber with BiFunction method, of class JsonMap.
      * Test case with a single entry in the JSON object.
+     * 
+     * Covers fromNumber(BiFunction) def-use path [1,2]
      */
     @Test
     public void testFromNumberBiFunctionSingleEntry() {

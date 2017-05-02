@@ -51,6 +51,8 @@ public class JsonListTest {
 
     /**
      * Test of fromArray method, of class JsonList.
+     * 
+     * Covers fromArray def-use path [1,2,4,5,6]
      */
     @Test
     public void testFromArrayStrings() {
@@ -99,6 +101,8 @@ public class JsonListTest {
     /**
      * Test of fromArray method, of class JsonList.
      * Testing with an empty list of data.
+     * 
+     * Covers fromArray def-use path [1,2,4,5,7]
      */
     public void testFromArrayEmpty(){
         List<String> results = JsonList.fromArray(emptyArr,
@@ -107,7 +111,21 @@ public class JsonListTest {
     }
     
     /**
+     * Test of fromArray method, of class JsonList.
+     * Testing with an null list of data.
+     * 
+     * Covers fromArray def-use path [1,2,3]
+     */
+    public void testFromArrayNull(){
+        List<String> results = JsonList.fromArray(null,
+                (JsonValue value) -> value.toString().replaceAll("\"", ""));
+        assertTrue(results.isEmpty());
+    }
+    
+    /**
      * Test of fromStringArray method, of class JsonList.
+     * 
+     * Covers fromStringArray def-use path [1,2]
      */
     @Test
     public void testFromStringArray() {

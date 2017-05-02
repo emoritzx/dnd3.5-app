@@ -159,6 +159,15 @@ public class TestHelper {
                 ).build();
     }
     
+    public static JsonObject getCharacterNoLevels() {
+        return Json.createObjectBuilder()
+                .add(JsonCharacter.ABILITY_ID, getAbilities())
+                .add(JsonCharacter.NAME_ID, "Starbuck")
+                .add(JsonCharacter.RACE_ID, "feline")
+                .add(JsonCharacter.LEVEL_ID,
+                        Json.createArrayBuilder().build())
+                .build();
+    }
     
     public static boolean equals(Enhancement expected, Enhancement actual) {
         return expected.getAbilities().equals(actual.getAbilities())

@@ -22,6 +22,8 @@ public class JsonAbilityTest {
 
     /**
      * Test of fromShortForm method, of class JsonAbility.
+     * 
+     * Covers fromShortForm def-use path [1,2,3,4]
      */
     @Test
     public void testFromShortForm() {
@@ -47,6 +49,20 @@ public class JsonAbilityTest {
         assertEquals(empty, emptyAbility.getName());
         assertNotNull(sAbility.getValue());
         assertEquals(s, sAbility.getName());
+    }
+    
+    /**
+     * Test of fromShortForm method, of class JsonAbility, with an
+     * empty JsonArray as input.
+     * 
+     * Covers fromShortForm def-use path [1,2,3,5]
+     */
+    @Test
+    public void testFromShortFormEmptyArray(){
+        JsonArray jsonArray = Json.createArrayBuilder().build();
+        Map<String, Ability> abilities = JsonAbility.fromShortForm(jsonArray);
+        assertTrue(abilities.isEmpty());
+        
     }
     
     /**
@@ -83,6 +99,8 @@ public class JsonAbilityTest {
     
     /**
      * Test of fromLongForm method, of class JsonAbility.
+     * 
+     * Covers fromLongForm def-use path [1,2]
      */
     @Test
     public void testFromLongForm() {

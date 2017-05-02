@@ -56,10 +56,13 @@ public class JsonClassDefinitionTest {
     /**
      * Test of getClassForLevel method, of class JsonClassDefinition.
      *
+     * Covers getClassForLevel def-use path [1,2]
+     * and Constructor def-use paths [1,2,3,4,5] and [5,3,4,5]
+     * 
      * @param testCase
      */
     @Theory
-    public void testGetClassForLevel1(TestItem testCase) {
+    public void testGetClassForLevel(TestItem testCase) {
         JsonObject jsonObj = TestHelper.getClassDefinition();
         JsonClassDefinition jsonDef = new JsonClassDefinition(jsonObj, cnvtr);
         ClassDefinition def = jsonDef.getClassForLevel(testCase.level);
@@ -85,6 +88,9 @@ public class JsonClassDefinitionTest {
 
     /**
      * Test of size method, of class JsonClassDefinition.
+     * 
+     * Covers size def-use path [1,2]
+     * and Constructor def-use path [1,2,3,4,5] and [5,3,4,5]
      */
     @Test
     public void testSize() {

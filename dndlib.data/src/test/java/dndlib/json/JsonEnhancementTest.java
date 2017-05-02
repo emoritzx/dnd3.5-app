@@ -35,6 +35,8 @@ public class JsonEnhancementTest {
     
     /**
      * Test of fromList method, of class JsonEnhancement.
+     * 
+     * Covers fromList def-use path [1,2,3,4,5,6]
      */
     @Test
     public void testFromList() {
@@ -48,7 +50,10 @@ public class JsonEnhancementTest {
     
     /**
      * Test of fromList method, of class JsonEnhancement.
-     * Test will null input JsonArray.
+     * Test with null input JsonArray.
+     * 
+     * Covers fromList def-use path [1,2,3]
+     * 
      */
     @Test
     public void testFromListNull(){
@@ -57,8 +62,26 @@ public class JsonEnhancementTest {
     }
 
     /**
+     * Test of fromList method, of class JsonEnhancement.
+     * Test with empty input JsonArray.
+     * 
+     * Covers fromList def-use path [1,2,3,4,5,7]
+     */
+    @Test
+    public void testFromListEmpty(){
+        JsonArray empty = Json.createArrayBuilder().build();
+        List<Enhancement> list = JsonEnhancement.fromList(empty);
+        assertTrue(list.isEmpty());
+    }
+    
+    
+    /**
      * Test of getAbilities method, of class JsonEnhancement.
-     * @param jsonObj
+     * 
+     * Covers getAbilities def-use path [1,2]
+     * and Constructor def-use path [1,2]
+     * 
+     * @param jsonObj the input json object
      */
     @Theory
     public void testGetAbilities(JsonObject jsonObj) {
@@ -72,7 +95,10 @@ public class JsonEnhancementTest {
 
     /**
      * Test of getArmor method, of class JsonEnhancement.
-     * @param jsonObj
+     * Covers getArmor def-use path [1,2]
+     * and Constructor def-use path [1,2]
+     * 
+     * @param jsonObj the input json object
      */
     @Theory
     public void testGetArmor(JsonObject jsonObj) {
@@ -86,7 +112,10 @@ public class JsonEnhancementTest {
 
     /**
      * Test of getBaseAttackBonus method, of class JsonEnhancement.
-     * @param jsonObj
+     * Covers getBaseAttackBonus def-use path [1,2]
+     * and Constructor def-use path [1,2]
+     * 
+     * @param jsonObj the input json object
      */
     @Theory
     public void testGetBaseAttackBonus(JsonObject jsonObj) {
@@ -108,7 +137,11 @@ public class JsonEnhancementTest {
 
     /**
      * Test of getSaves method, of class JsonEnhancement.
-     * @param jsonObj
+     * 
+     * Covers getSaves def-use path [1,2]
+     * and Constructor def-use path [1,2]
+     * 
+     * @param jsonObj the input json object
      */
     @Theory
     public void testGetSaves(JsonObject jsonObj) {
@@ -122,7 +155,11 @@ public class JsonEnhancementTest {
 
     /**
      * Test of getSkills method, of class JsonEnhancement.
-     * @param jsonObj
+     * 
+     * Covers getSkills def-use path [1,2]
+     * and Constructor def-use path [1,2]
+     * 
+     * @param jsonObj the input json object
      */
     @Theory
     public void testGetSkills(JsonObject jsonObj) {
@@ -136,7 +173,11 @@ public class JsonEnhancementTest {
 
     /**
      * Test of getSlot method, of class JsonEnhancement.
-     * @param jsonObj
+     * 
+     * Covers getSlot def-use path [1,2]
+     * and Constructor def-use path [1,2]
+     * 
+     * @param jsonObj the input json object
      */
     @Theory
     public void testGetSlot(JsonObject jsonObj) {
