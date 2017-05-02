@@ -49,6 +49,8 @@ public class StandardDieTest {
 
     /**
      * Test of toString method, of class StandardDie.
+     * Covers the toString def-use path [1,2]
+     * and Constructor def-use path [1,2]
      *
      * @param size the size of the die
      */

@@ -19,6 +19,9 @@ import org.junit.runner.RunWith;
 @RunWith(Theories.class)
 public class ScriptedDieTest {
 
+    /**
+     * Static class type for storing test case data
+     */
     public static class TestItem {
 
         int size;
@@ -43,6 +46,8 @@ public class ScriptedDieTest {
 
     /**
      * Test of getSize method, of class ScriptedDie.
+     * Covers the getSize def-use path [1,2]
+     * and the Constructor def-use path [1,2]
      *
      * @param testCase
      */
@@ -54,6 +59,8 @@ public class ScriptedDieTest {
 
     /**
      * Test of roll method, of class ScriptedDie.
+     * Covers the roll def-use path [1,2]
+     * and the Constructor def-use path [1,2]
      *
      * @param testCase
      */
@@ -76,6 +83,7 @@ public class ScriptedDieTest {
 
     /**
      * Test of of method, of class ScriptedDie.
+     * Covers the of method def-use path [1,2,4]
      *
      * @param script the list of rolls to script
      */

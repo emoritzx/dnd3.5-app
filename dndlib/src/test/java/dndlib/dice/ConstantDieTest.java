@@ -13,6 +13,8 @@ public class ConstantDieTest {
 
     /**
      * Test of toString method, of class ConstantDie.
+     * Covers toString def-use path [1,2]
+     * and Constructor def-use path [1,2]
      */
     @Test
     public void testToStringSix() {
@@ -33,13 +35,25 @@ public class ConstantDieTest {
 
     /**
      * Test of levelAdjustment method, of class ConstantDie.
+     * Covers levelAdjustment def-use path [1,2,3]
      */
     @Test
-    public void testLevelAdjustment() {
+    public void testLevelAdjustment1() {
         BiFunction<Integer, Integer, Die> adjFnc
                 = ConstantDie.levelAdjustment((in) -> Math.floorDiv(in, 3));
         assertEquals(6, adjFnc.apply(1, 6).getSize());
+    }
+    
+    /**
+     * Test of levelAdjustment method, of class ConstantDie.
+     * Covers levelAdjustment def-use path [1,2,4]
+     */
+    @Test
+    public void testLevelAdjustment2() {
+        BiFunction<Integer, Integer, Die> adjFnc
+                = ConstantDie.levelAdjustment((in) -> Math.floorDiv(in, 3));
         assertEquals(2, adjFnc.apply(2, 6).getSize());
     }
+    
 
 }

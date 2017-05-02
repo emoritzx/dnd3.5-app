@@ -13,6 +13,10 @@ import static org.junit.Assert.*;
  */
 public class UniformDieTest {
     
+    /**
+     * Test case for the UniformDie constructor
+     * with a single value for both lower and upper
+     */
     @Test
     public void testWithSingleValueRange() {
         UniformDie die = new UniformDie(1,1);
@@ -20,6 +24,10 @@ public class UniformDieTest {
         assertEquals(1, die.roll());
     }
     
+    /**
+     * Test case for the UniformDie constructor
+     * with a small range of values
+     */
     @Test
     public void testWithTwoValueRange(){
         UniformDie die = new UniformDie(2,3);
@@ -27,6 +35,10 @@ public class UniformDieTest {
         assertTrue(roll == 2 || roll == 3);
     }
     
+    /**
+     * Test case for the UniformDie constructor
+     * with a larger range of values
+     */
     @Test
     public void testWithLargerRange(){
         UniformDie die = new UniformDie(3,23);
@@ -34,6 +46,10 @@ public class UniformDieTest {
         assertTrue(roll >= 3 && roll <= 23);
     }
     
+    /**
+     * Test case for the UniformDie constructor
+     * Covers Constructor def-use path [1,2,3,4]
+     */
     @Test(expected=IllegalArgumentException.class)
     public void testIllegalArg(){
         UniformDie die = new UniformDie(5,2);

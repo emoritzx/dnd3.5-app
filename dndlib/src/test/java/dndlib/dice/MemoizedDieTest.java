@@ -21,6 +21,8 @@ public class MemoizedDieTest {
 
     /**
      * Test of getSize method, of class MemoizedDie.
+     * Covers getSize def-use path [1,2]
+     * and Constructor def-use path[1,2]
      *
      * @param size the size for the die that will be used to instantiate the
      * MemoizedDie
@@ -35,6 +37,8 @@ public class MemoizedDieTest {
 
     /**
      * Test of roll method, of class MemoizedDie.
+     * Covers roll def-use path [1,2]
+     * and Constructor def-use path[1,2]
      *
      * @param rollValue the value of the roll for the die that will be used to
      * instantiate the MemoizedDie
