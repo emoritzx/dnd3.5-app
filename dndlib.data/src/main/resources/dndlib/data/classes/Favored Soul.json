@@ -1,0 +1,67 @@
+{
+    "name": "Favored Soul",
+    "hitDie": 8,
+    "skillModifier": 2,
+    "skills": [
+        "Concentration",
+        "Craft (...)",
+        "Diplomacy",
+        "Heal",
+        "Jump",
+        "Knowledge (Arcana)",
+        "Profession",
+        "Profession (Arbiter)",
+        "Sense Motive",
+        "Spellcraft"
+    ],
+    "enhancements": [
+        {
+            "slot": "Level 1",
+            "saves": {
+                "Fortitude": 2,
+                "Reflex": 2,
+                "Will": 2
+            },
+            "feats": [
+                {
+                    "slot": "Feat",
+                    "name": "Weapon Proficiency (Simple)"
+                },
+                {
+                    "slot": "Feat",
+                    "name": "Armor Proficiency (Light)"
+                },
+                {
+                    "slot": "Feat",
+                    "name": "Armor Proficiency (Medium)"
+                },
+                {
+                    "slot": "Feat",
+                    "name": "Armor Proficiency (Shield)"
+                }
+            ]
+        },
+        {
+            "slot": "Level 2",
+            "bab": 1,
+            "saves": {
+                "Fortitude": 1,
+                "Reflex": 1,
+                "Will": 1
+            }
+        },
+        {
+            "slot": "Level 3",
+            "bab": 1,
+            "feats": [
+                {
+                    "slot": "feat",
+                    "name": "Deity's Weapon Focus"
+                }
+            ]
+        },
+        {
+            "slot": "Level 4"
+        }
+    ]
+}

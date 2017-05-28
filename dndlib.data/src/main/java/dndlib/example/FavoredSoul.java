@@ -16,7 +16,7 @@ public final class FavoredSoul {
     public static void main(String[] args) {
 
         // create character
-        dndlib.character.Character raoul = Loaders.getCharacter("raoul");
+        dndlib.character.Character raoul = Loaders.getCharacter("raoul", Loaders::noAdjustment);
         
         // set up output view
         try (PrintWriter writer = new PrintWriter(System.out)) {
